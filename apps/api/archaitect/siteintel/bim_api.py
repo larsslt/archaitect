@@ -1078,9 +1078,7 @@ def _jdir(proj: Project, jid: str) -> Path:
 
 
 def _jwrite(d: Path, rec: dict) -> None:
-    tmp = d / "job.json.tmp"
-    tmp.write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
-    tmp.replace(d / "job.json")
+    _atomic_write(d / "job.json", json.dumps(rec, ensure_ascii=False))
 
 
 def _jread(d: Path) -> dict:
@@ -1235,9 +1233,7 @@ def _pread(proj: Project) -> dict:
 
 def _pwrite(proj: Project, rec: dict) -> None:
     f = _pdir(proj) / "state.json"
-    tmp = f.with_suffix(".tmp")
-    tmp.write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
-    tmp.replace(f)
+    _atomic_write(f, json.dumps(rec, ensure_ascii=False))
 
 
 def _photo_job(pid: str, proj: Project, ids: list[str]) -> None:
