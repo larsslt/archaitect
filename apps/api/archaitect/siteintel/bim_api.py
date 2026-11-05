@@ -112,7 +112,7 @@ def _configure_llm(with_images: bool) -> str | None:
         os.environ["BIMRENDER_LLM_PROVIDER"] = "ollama"
         os.environ.pop("BIMRENDER_PROMPT", None)
         return None
-    return ("Kein Sprachmodell erreichbar. Meta-AI-Schlüssel im macOS-Schlüsselbund hinterlegen (./scripts/set-api-key) und die API mit ./scripts/dev-api starten "
+    return ("Kein Sprachmodell erreichbar. META_API_KEY in .env.local eintragen und neu starten "
             "oder lokales Ollama (qwen3:8b) starten. Ohne Modell geht der Entwurf nur über die Beispielhäuser oder als Spezifikation (JSON).")
 
 
@@ -1297,7 +1297,7 @@ def create_photos(pid: str, body: PhotoBody | None = None):
     if not Path(bim.BLENDER).exists():
         raise HTTPException(503, f"Blender nicht gefunden ({bim.BLENDER}).")
     if not BP.api_key():
-        raise HTTPException(503, "Meta-Schlüssel fehlt: ./scripts/set-api-key ausführen und die API mit --meta starten.")
+        raise HTTPException(503, "Meta-Schlüssel fehlt: META_API_KEY in .env.local eintragen und die API neu starten.")
     if proj.dir.name in _PHOTO_BUSY:
         raise HTTPException(429, "Die Bilderwelt wird bereits erzeugt.")
     ids = [s for s in (body.shots if body and body.shots else _PHOTO_IDS) if s in _PHOTO_IDS]

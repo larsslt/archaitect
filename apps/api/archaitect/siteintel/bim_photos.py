@@ -7,7 +7,6 @@ surroundings, two close-ups from different angles, one aerial plan view."""
 from __future__ import annotations
 
 import base64
-import getpass
 import io
 import json
 import math
@@ -153,11 +152,7 @@ def capture(shot: dict, out_png, base: str | None = None, pid: str = "", timeout
 
 
 def api_key() -> str | None:
-    k = os.environ.get("META_API_KEY") or os.environ.get("MODEL_API_KEY")
-    if k:
-        return k
-    r = subprocess.run(["/usr/bin/security", "find-generic-password", "-a", getpass.getuser(), "-s", "archaitect.meta-model-api", "-w"], capture_output=True, text=True)
-    return r.stdout.strip() or None
+    return os.environ.get("META_API_KEY") or os.environ.get("MODEL_API_KEY") or None
 
 
 class PhotoError(RuntimeError):
@@ -168,7 +163,7 @@ def meta_edit(image_png: bytes, text: str, size: str = "2048x1152", timeout: flo
     """Photo-real version of a render. Returns (image bytes as delivered, usage)."""
     key = api_key()
     if not key:
-        raise PhotoError("Meta-API-Schlüssel fehlt (./scripts/set-api-key).")
+        raise PhotoError("Meta-API-Schlüssel fehlt (META_API_KEY in .env.local setzen).")
     b = uuid.uuid4().hex
 
     def part(name, val, fn=None, ct=None):
