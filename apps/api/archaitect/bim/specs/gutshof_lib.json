@@ -1,0 +1,898 @@
+{
+ "spec_version": 1,
+ "name": "Gutshof",
+ "description": "Gutshof in U-Form mit Herrenhaus, Scheune und Stall um einen gepflasterten Innenhof, Backsteinfassaden und Walmdach",
+ "building_type": "mehrgenerationen_hofhaus",
+ "assumptions": [
+  "Herrenhaus 22 x 9,5 m zweigeschossig, Scheune und Stall je 9 x 16 m mit 4,6 m Traufe angenommen.",
+  "Innenhof 4 m breit, gepflastert; Haupteingang im Süden."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG",
+   "elevation": 3.3
+  },
+  {
+   "name": "Dach",
+   "elevation": 6.6
+  }
+ ],
+ "storey_height": 3.3,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Herrenhaus",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    22.0,
+    9.5
+   ],
+   "base_z": 0.4,
+   "storeys": 2,
+   "storey_height": 3.3,
+   "wall_thickness": 0.5,
+   "facade": "plaster_cream",
+   "roof": {
+    "type": "hip",
+    "pitch_deg": 38,
+    "overhang": 0.6,
+    "material": "roof_tile_red"
+   }
+  },
+  {
+   "id": "B",
+   "name": "Westscheune",
+   "origin": [
+    0.0,
+    9.5
+   ],
+   "size": [
+    9.0,
+    16.0
+   ],
+   "base_z": 0.4,
+   "storeys": 1,
+   "storey_height": 4.6,
+   "wall_thickness": 0.45,
+   "facade": "brick_orange",
+   "roof": {
+    "type": "gable",
+    "ridge": "y",
+    "pitch_deg": 40,
+    "overhang": 0.5,
+    "material": "roof_tile_red"
+   }
+  },
+  {
+   "id": "C",
+   "name": "Oststall",
+   "origin": [
+    13.0,
+    9.5
+   ],
+   "size": [
+    9.0,
+    16.0
+   ],
+   "base_z": 0.4,
+   "storeys": 1,
+   "storey_height": 4.6,
+   "wall_thickness": 0.45,
+   "facade": "brick_orange",
+   "roof": {
+    "type": "gable",
+    "ridge": "y",
+    "pitch_deg": 40,
+    "overhang": 0.5,
+    "material": "roof_tile_red"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 10.1,
+   "width": 1.8,
+   "height": 2.7,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "frame": "paint_green_dark"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 2.11,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 5.43,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 15.37,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 18.69,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.7,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 4.6,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 7.5,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 10.4,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 13.3,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 16.2,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 19.1,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_yellow",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "shutters": {
+    "material": "paint_green_dark",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.6,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 16.2,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 2.11,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 5.43,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 8.74,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 12.06,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 15.37,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 18.69,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 10.1,
+   "width": 1.8,
+   "height": 2.5,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "frame": "paint_green_dark"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 2.37,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 5.93,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 2.37,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 5.93,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 2.37,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 5.93,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 2.37,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 5.93,
+   "width": 1.2,
+   "height": 1.7,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 0,
+   "offset": 2.5,
+   "width": 4.0,
+   "height": 3.6,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "sectional",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "C",
+   "side": "N",
+   "storey": 0,
+   "offset": 2.5,
+   "width": 4.0,
+   "height": 3.6,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "sectional",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 0,
+   "offset": 3.4,
+   "width": 0.8,
+   "height": 0.9,
+   "sill": 1.8,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 0,
+   "offset": 11.8,
+   "width": 0.8,
+   "height": 0.9,
+   "sill": 1.8,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 0,
+   "offset": 3.4,
+   "width": 0.8,
+   "height": 0.9,
+   "sill": 1.8,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 0,
+   "offset": 11.8,
+   "width": 0.8,
+   "height": 0.9,
+   "sill": 1.8,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "E",
+   "storey": 0,
+   "offset": 3.25,
+   "width": 1.0,
+   "height": 1.2,
+   "sill": 1.3,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "E",
+   "storey": 0,
+   "offset": 11.75,
+   "width": 1.0,
+   "height": 1.2,
+   "sill": 1.3,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "C",
+   "side": "W",
+   "storey": 0,
+   "offset": 3.25,
+   "width": 1.0,
+   "height": 1.2,
+   "sill": 1.3,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "C",
+   "side": "W",
+   "storey": 0,
+   "offset": 11.75,
+   "width": 1.0,
+   "height": 1.2,
+   "sill": 1.3,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "E",
+   "storey": 0,
+   "offset": 7.4,
+   "width": 1.2,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "plank",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "C",
+   "side": "W",
+   "storey": 0,
+   "offset": 7.4,
+   "width": 1.2,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "plank",
+   "frame": "timber_brown_dark"
+  }
+ ],
+ "components": [
+  {
+   "type": "steps",
+   "volume": "A",
+   "side": "S",
+   "u": 11.0,
+   "width": 2.6,
+   "count": 3,
+   "rise": 0.15,
+   "tread": 0.34,
+   "material": "stone_granite_grey"
+  },
+  {
+   "type": "canopy",
+   "volume": "A",
+   "side": "S",
+   "u": 11.0,
+   "width": 3.0,
+   "projection": 1.3,
+   "z": 2.9,
+   "kind": "flat",
+   "support": "posts",
+   "material": "timber_brown_dark"
+  },
+  {
+   "type": "cornice",
+   "volume": "A",
+   "side": "all",
+   "z": 6.9,
+   "height": 0.3,
+   "projection": 0.3,
+   "profile": "cove",
+   "material": "stone_sandstone_yellow"
+  },
+  {
+   "type": "quoins",
+   "volume": "A",
+   "width": 0.5,
+   "course": 0.35,
+   "z0": 0.4,
+   "z1": 7.0,
+   "material": "stone_sandstone_yellow"
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 5.0,
+   "y": 4.7,
+   "width": 0.9,
+   "depth": 0.9,
+   "height": 1.4,
+   "material": "brick_red",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 17.0,
+   "y": 4.7,
+   "width": 0.9,
+   "depth": 0.9,
+   "height": 1.4,
+   "material": "brick_red",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "gutter",
+   "volume": "C",
+   "side": "all",
+   "material": "zinc"
+  },
+  {
+   "type": "gutter",
+   "volume": "B",
+   "side": "all",
+   "material": "zinc"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "all",
+   "material": "zinc"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     11.0,
+     -2.0
+    ],
+    [
+     11.0,
+     -9.0
+    ]
+   ],
+   "width": 2.4,
+   "material": "paving_granite"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     11.0,
+     9.5
+    ],
+    [
+     11.0,
+     24.0
+    ]
+   ],
+   "width": 6.0,
+   "material": "cobblestone"
+  },
+  {
+   "type": "lamp",
+   "volume": "A",
+   "side": "S",
+   "u": 7.5,
+   "z": 2.8,
+   "size": 0.3,
+   "material": "cast_iron_black"
+  },
+  {
+   "type": "lamp",
+   "volume": "A",
+   "side": "S",
+   "u": 14.5,
+   "z": 2.8,
+   "size": 0.3,
+   "material": "cast_iron_black"
+  }
+ ],
+ "site": {},
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     51,
+     -28,
+     1.65
+    ],
+    "target": [
+     11,
+     12,
+     6.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -29,
+     -28,
+     1.65
+    ],
+    "target": [
+     11,
+     12,
+     6.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     11,
+     -40.0,
+     1.65
+    ],
+    "target": [
+     11,
+     12,
+     6.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     55.0,
+     -32.0,
+     12
+    ],
+    "target": [
+     11,
+     12,
+     6.0
+    ],
+    "lens_mm": 28
+   }
+  ]
+ }
+}

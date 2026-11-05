@@ -1,0 +1,418 @@
+{
+ "spec_version": 1,
+ "name": "Architektenvilla am Hang",
+ "description": "Moderne Architektenvilla aus Sichtbeton und Thermoholz mit auskragendem Obergeschoss, Gründach, raumhohen Verglasungen und Carport",
+ "building_type": "moderner_flachdach_architektenhaus",
+ "assumptions": [
+  "Sockelgeschoss 16 x 9,5 m aus Sichtbeton, Obergeschoss 13 x 8,5 m aus Thermoholz, 1,5 m nach Süden auskragend.",
+  "Gründach, Cortenstahl-Carport, Südterrasse; für Hanglage geeignet."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG",
+   "elevation": 3.45
+  },
+  {
+   "name": "Dach",
+   "elevation": 6.9
+  }
+ ],
+ "storey_height": 3.45,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Sockelgeschoss",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    16.0,
+    9.5
+   ],
+   "base_z": 0.0,
+   "storeys": 1,
+   "storey_height": 3.2,
+   "wall_thickness": 0.4,
+   "facade": "concrete_exposed",
+   "roof": {
+    "type": "flat",
+    "overhang": 0.3,
+    "material": "roof_gravel_flat"
+   }
+  },
+  {
+   "id": "B",
+   "name": "Obergeschoss",
+   "origin": [
+    3.0,
+    -1.5
+   ],
+   "size": [
+    13.0,
+    8.5
+   ],
+   "base_z": 3.45,
+   "storeys": 1,
+   "storey_height": 3.2,
+   "wall_thickness": 0.35,
+   "facade": "wood_thermo",
+   "roof": {
+    "type": "flat",
+    "overhang": 0.8,
+    "material": "roof_sedum"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 2.4,
+   "width": 1.2,
+   "height": 2.5,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.3,
+   "width": 3.6,
+   "height": 2.7,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 6.2,
+   "width": 3.6,
+   "height": 2.7,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 11.1,
+   "width": 3.6,
+   "height": 2.7,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 7.0,
+   "width": 2.0,
+   "height": 0.8,
+   "sill": 1.6,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 11.5,
+   "width": 2.0,
+   "height": 0.8,
+   "sill": 1.6,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 3.55,
+   "width": 2.4,
+   "height": 2.4,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 0,
+   "offset": 0.7,
+   "width": 3.4,
+   "height": 2.6,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.8,
+   "width": 3.4,
+   "height": 2.6,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 0,
+   "offset": 8.9,
+   "width": 3.4,
+   "height": 2.6,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.45,
+   "width": 2.4,
+   "height": 1.0,
+   "sill": 1.1,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 0,
+   "offset": 5.3,
+   "width": 2.4,
+   "height": 1.0,
+   "sill": 1.1,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 0,
+   "offset": 9.15,
+   "width": 2.4,
+   "height": 1.0,
+   "sill": 1.1,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "E",
+   "storey": 0,
+   "offset": 1.75,
+   "width": 5.0,
+   "height": 2.6,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.5,
+   "width": 2.0,
+   "height": 1.4,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 0,
+   "offset": 5.0,
+   "width": 2.0,
+   "height": 1.4,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  }
+ ],
+ "components": [
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "S",
+   "u": 8.0,
+   "width": 16.0,
+   "depth": 3.5,
+   "z": -0.1,
+   "thickness": 0.25,
+   "material": "paving_concrete",
+   "railing": "none"
+  },
+  {
+   "type": "carport",
+   "volume": "A",
+   "side": "E",
+   "u": 4.0,
+   "width": 5.5,
+   "projection": 5.5,
+   "height": 2.6,
+   "kind": "flat",
+   "material": "steel_corten"
+  },
+  {
+   "type": "solar",
+   "volume": "B",
+   "mode": "flat",
+   "x": 2.0,
+   "y": 1.5,
+   "cols": 5,
+   "rows": 3,
+   "panel_w": 1.1,
+   "panel_l": 1.7,
+   "tilt": 12
+  },
+  {
+   "type": "canopy",
+   "volume": "A",
+   "side": "N",
+   "u": 3.0,
+   "width": 2.8,
+   "projection": 1.6,
+   "z": 2.9,
+   "kind": "flat",
+   "support": "none",
+   "material": "steel_corten"
+  },
+  {
+   "type": "steps",
+   "volume": "A",
+   "side": "N",
+   "u": 3.0,
+   "width": 1.8,
+   "count": 2,
+   "material": "concrete_light"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     3.0,
+     9.5
+    ],
+    [
+     3.0,
+     16.0
+    ]
+   ],
+   "width": 1.4,
+   "material": "paving_concrete"
+  },
+  {
+   "type": "gutter",
+   "volume": "B",
+   "side": "N",
+   "material": "alu_anthracite"
+  }
+ ],
+ "site": {},
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     32,
+     -20,
+     1.65
+    ],
+    "target": [
+     8,
+     4,
+     4.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -16,
+     -20,
+     1.65
+    ],
+    "target": [
+     8,
+     4,
+     4.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     8,
+     -27.2,
+     1.65
+    ],
+    "target": [
+     8,
+     4,
+     4.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     34.4,
+     -22.4,
+     9
+    ],
+    "target": [
+     8,
+     4,
+     4.5
+    ],
+    "lens_mm": 28
+   }
+  ]
+ }
+}

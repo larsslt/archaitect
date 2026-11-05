@@ -1,0 +1,1237 @@
+{
+ "spec_version": 1,
+ "name": "Backstein-Speicher",
+ "description": "Hamburger Backstein-Speicher mit Segmentbogenfenstern, Ladeluken, Zahnschnitt und Satteldach",
+ "building_type": "speicher_backstein",
+ "assumptions": [
+  "Grundfläche 16 x 9 m, vier Geschosse à 3,4 m angenommen.",
+  "Backstein rot mit hellen Gesimsen, Schiefer-/Ziegeldach 38 Grad."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "1.OG",
+   "elevation": 3.4
+  },
+  {
+   "name": "2.OG",
+   "elevation": 6.8
+  },
+  {
+   "name": "3.OG",
+   "elevation": 10.2
+  },
+  {
+   "name": "Dach",
+   "elevation": 13.6
+  }
+ ],
+ "storey_height": 3.4,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Speicher",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    16.0,
+    9.0
+   ],
+   "base_z": 0.3,
+   "storeys": 4,
+   "storey_height": 3.4,
+   "wall_thickness": 0.6,
+   "facade": "brick_red",
+   "roof": {
+    "type": "gable",
+    "ridge": "x",
+    "pitch_deg": 38,
+    "overhang": 0.3,
+    "material": "roof_tile_anthracite"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.17,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 3.64,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 6.11,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 8.59,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 1.17,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 3.64,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 6.11,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 8.59,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 1.17,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 3.64,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 6.11,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 8.59,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.17,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 3.64,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 6.11,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 8.59,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.17,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 3.64,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 6.11,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 8.59,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 1.17,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 3.64,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 6.11,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 8.59,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 1.17,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 3.64,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 6.11,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 8.59,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 11.06,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 13.53,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 6.8,
+   "width": 2.4,
+   "height": 3.0,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 2.1,
+   "width": 1.8,
+   "height": 2.6,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "plank",
+   "top": "segment_arch",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 2.13,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 5.57,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 2.13,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 5.57,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 2.13,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 5.57,
+   "width": 1.3,
+   "height": 2.2,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 2.13,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 5.57,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "frame": "steel_black",
+   "surround": {
+    "material": "brick_buff",
+    "width": 0.2,
+    "depth": 0.05,
+    "lintel": "flat"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 3,
+   "offset": 3.9,
+   "width": 1.2,
+   "height": 1.2,
+   "sill": 0.7,
+   "kind": "window",
+   "window_type": "oculus"
+  }
+ ],
+ "components": [
+  {
+   "type": "cornice",
+   "volume": "A",
+   "side": "all",
+   "z": 13.6,
+   "height": 0.3,
+   "projection": 0.25,
+   "profile": "stepped",
+   "material": "brick_buff"
+  },
+  {
+   "type": "dentil",
+   "volume": "A",
+   "side": "S",
+   "z": 13.3,
+   "width": 0.1,
+   "height": 0.1,
+   "spacing": 0.2,
+   "material": "brick_buff"
+  },
+  {
+   "type": "bracket",
+   "volume": "A",
+   "side": "S",
+   "u": 8.0,
+   "z": 12.8,
+   "count": 1,
+   "size": 0.5,
+   "projection": 0.7,
+   "material": "steel_black"
+  },
+  {
+   "type": "ramp",
+   "volume": "A",
+   "side": "S",
+   "u": 8.0,
+   "width": 3.2,
+   "length": 9.0,
+   "height": 0.9,
+   "z0": 0.0,
+   "material": "concrete_light",
+   "railing": "none"
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 12.0,
+   "y": 4.5,
+   "width": 0.9,
+   "depth": 0.9,
+   "height": 1.8,
+   "material": "brick_dark",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "lamp",
+   "volume": "A",
+   "side": "S",
+   "u": 5.0,
+   "z": 3.0,
+   "size": 0.3,
+   "material": "cast_iron_black"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "all",
+   "material": "zinc"
+  }
+ ],
+ "site": {},
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     36,
+     -23.5,
+     1.65
+    ],
+    "target": [
+     8,
+     4.5,
+     6.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -20,
+     -23.5,
+     1.65
+    ],
+    "target": [
+     8,
+     4.5,
+     6.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     8,
+     -31.9,
+     1.65
+    ],
+    "target": [
+     8,
+     4.5,
+     6.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     38.8,
+     -26.3,
+     12
+    ],
+    "target": [
+     8,
+     4.5,
+     6.0
+    ],
+    "lens_mm": 28
+   }
+  ]
+ }
+}

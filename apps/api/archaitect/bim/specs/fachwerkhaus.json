@@ -1,0 +1,633 @@
+{
+ "spec_version": 1,
+ "name": "Fachwerkhaus Gasthaus",
+ "description": "Zweigeschossiges Fachwerkhaus mit steilem Satteldach (Giebel zur Strasse im Sueden), Steinsockel, dunkles Fachwerk auf weissem Putz, rote Ziegel, Balkon im Giebel.",
+ "assumptions": [
+  "Grundflaeche 8.5 x 10.5 m und Geschosshoehe 2.9 m aus dem Foto geschaetzt.",
+  "Dachneigung 52 Grad, Dachueberstand 0.5 m aus dem Foto geschaetzt.",
+  "Fachwerk als aufgesetzte Balken im Raster 1.1 m mit Streben, nicht das exakte Gefache des Fotos."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG1",
+   "elevation": 2.8
+  },
+  {
+   "name": "DG",
+   "elevation": 5.6
+  },
+  {
+   "name": "Dach",
+   "elevation": 8.4
+  }
+ ],
+ "storey_height": 2.9,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.3,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "steel_black",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Haupthaus EG+OG",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    8.5,
+    10.5
+   ],
+   "base_z": 0.0,
+   "storeys": 2,
+   "wall_thickness": 0.3,
+   "facade": "plaster_white",
+   "storey_height": 2.9,
+   "roof": {
+    "type": "gable",
+    "ridge": "y",
+    "pitch_deg": 52,
+    "overhang": 0.5,
+    "material": "roof_tile_red"
+   },
+   "facade_detail": {
+    "timber_frame": {
+     "spacing": 1.1,
+     "post_width": 0.14,
+     "depth": 0.07,
+     "braces": true,
+     "material": "timber_dark"
+    },
+    "plinth": {
+     "height": 0.7,
+     "material": "stone_plinth"
+    }
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.4,
+   "height": 1.4,
+   "sill": 0.8,
+   "kind": "window",
+   "note": "EG Sued Fenster West mit Blumenkasten"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 3.65,
+   "width": 1.2,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "panel": "walnut",
+   "note": "Haustuer Holz Anno 1685 mittig"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 6.1,
+   "width": 1.4,
+   "height": 1.4,
+   "sill": 0.8,
+   "kind": "window",
+   "note": "EG Sued Fenster Ost mit Blumenkasten"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.0,
+   "width": 1.4,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window",
+   "note": "OG Sued West"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 3.55,
+   "width": 1.4,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window",
+   "note": "OG Sued Mitte"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 6.1,
+   "width": 1.4,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window",
+   "note": "OG Sued Ost"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 4.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 7.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 0.8,
+   "width": 1.2,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 3.2,
+   "width": 1.2,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 5.6,
+   "width": 1.2,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 8.0,
+   "width": 1.2,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 4.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 7.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 1.5,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 4.5,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 7.5,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 3.5,
+   "width": 1.1,
+   "height": 2.1,
+   "sill": 0.0,
+   "kind": "door",
+   "panel": "walnut",
+   "note": "Nebentuer Nord"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 6.0,
+   "width": 1.3,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.0,
+   "width": 1.2,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 3.6,
+   "width": 1.2,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 6.2,
+   "width": 1.2,
+   "height": 1.3,
+   "sill": 0.8,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 3.75,
+   "width": 1.0,
+   "height": 2.0,
+   "sill": 0.0,
+   "kind": "door",
+   "panel": "walnut"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 1.5,
+   "width": 0.8,
+   "height": 0.9,
+   "sill": 0.6,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 6.2,
+   "width": 0.8,
+   "height": 0.9,
+   "sill": 0.6,
+   "kind": "window"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 3.8,
+   "width": 0.9,
+   "height": 1.0,
+   "sill": 0.8,
+   "kind": "window"
+  }
+ ],
+ "balconies": [
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 5.8,
+   "offset": 2.85,
+   "width": 2.8,
+   "depth": 1.2,
+   "thickness": 0.18,
+   "railing": {
+    "height": 1.0,
+    "post_spacing": 0.13,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   },
+   "style": "timber",
+   "material": "timber_dark"
+  }
+ ],
+ "site": {
+  "ground_extent": [
+   -20,
+   -20,
+   30,
+   30
+  ],
+  "paving": [
+   {
+    "name": "Platz Sued Kopfstein",
+    "origin": [
+     -6.0,
+     -10.0
+    ],
+    "size": [
+     20.0,
+     10.0
+    ],
+    "tile": [
+     0.5,
+     0.5
+    ],
+    "joint": 0.02,
+    "thickness": 0.08,
+    "material": "cobblestone"
+   },
+   {
+    "name": "Gasse West",
+    "origin": [
+     -6.0,
+     0.0
+    ],
+    "size": [
+     6.0,
+     12.0
+    ],
+    "tile": [
+     0.5,
+     0.5
+    ],
+    "joint": 0.02,
+    "thickness": 0.08,
+    "material": "cobblestone"
+   }
+  ],
+  "paths": [
+   {
+    "name": "Weg Ost",
+    "origin": [
+     8.5,
+     0.0
+    ],
+    "size": [
+     1.5,
+     11.0
+    ],
+    "material": "gravel"
+   }
+  ],
+  "hedges": [
+   {
+    "name": "Blumenband Sued",
+    "origin": [
+     0.5,
+     -1.2
+    ],
+    "size": [
+     7.5,
+     0.6
+    ],
+    "height": 0.5
+   }
+  ],
+  "trees": [
+   {
+    "name": "Baum Gasse",
+    "position": [
+     -3.0,
+     -2.0
+    ],
+    "height": 4.5,
+    "crown_radius": 0.5
+   }
+  ]
+ },
+ "render": {
+  "sun": {
+   "azimuth_deg": 210.0,
+   "elevation_deg": 35.0
+  },
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     14.0,
+     -12.0,
+     1.7
+    ],
+    "target": [
+     4.0,
+     3.0,
+     4.0
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "street_s",
+    "position": [
+     4.0,
+     -14.0,
+     1.65
+    ],
+    "target": [
+     4.2,
+     2.0,
+     3.5
+    ],
+    "lens_mm": 28
+   }
+  ]
+ },
+ "rooms": [
+  {
+   "id": "r001",
+   "name": "Elternschlaf",
+   "function": "schlafen",
+   "level": "OG1",
+   "rect": [
+    0.3,
+    0.3,
+    8.2,
+    3.4
+   ]
+  },
+  {
+   "id": "r002",
+   "name": "Flur OG",
+   "function": "flur",
+   "level": "OG1",
+   "rect": [
+    3.5,
+    3.4,
+    5.0,
+    10.2
+   ]
+  },
+  {
+   "id": "r003",
+   "name": "Kind 1",
+   "function": "kind",
+   "level": "OG1",
+   "rect": [
+    0.3,
+    3.4,
+    3.5,
+    6.8
+   ]
+  },
+  {
+   "id": "r004",
+   "name": "Kind 2",
+   "function": "kind",
+   "level": "OG1",
+   "rect": [
+    0.3,
+    6.8,
+    3.5,
+    10.2
+   ]
+  },
+  {
+   "id": "r005",
+   "name": "Bad OG",
+   "function": "bad",
+   "level": "OG1",
+   "rect": [
+    5.0,
+    3.4,
+    8.2,
+    6.8
+   ]
+  },
+  {
+   "id": "r006",
+   "name": "Arbeiten",
+   "function": "arbeiten",
+   "level": "OG1",
+   "rect": [
+    5.0,
+    6.8,
+    8.2,
+    10.2
+   ]
+  }
+ ],
+ "limitations": [
+  "Blumenkaesten, Schilder, Strassenlaterne, Fensterlaeden und Schnitzwerk fehlen.",
+  "Nachbarhaeuser der Gasse fehlen."
+ ],
+ "dormers": [
+  {
+   "volume": "A",
+   "slope": "W",
+   "offset": 2.0,
+   "width": 1.6,
+   "inset": 0.9,
+   "wall_height": 1.2,
+   "window": {
+    "width": 0.8
+   }
+  },
+  {
+   "volume": "A",
+   "slope": "W",
+   "offset": 6.5,
+   "width": 1.6,
+   "inset": 0.9,
+   "wall_height": 1.2
+  },
+  {
+   "volume": "A",
+   "slope": "E",
+   "offset": 4.0,
+   "width": 1.6,
+   "inset": 0.9,
+   "wall_height": 1.2
+  }
+ ]
+}

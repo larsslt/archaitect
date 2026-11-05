@@ -1,0 +1,1057 @@
+{
+ "spec_version": 1,
+ "name": "Mehrfamilienhaus",
+ "description": "Mehrfamilienhaus mit 4 Geschossen, Flachdach, Balkone an der Südseite, Eingang mit Vordach",
+ "assumptions": [
+  "Grundfläche 18.0 x 12.0 m und Geschosshöhe 3.0 m als typisches Maß für ein Mehrfamilienhaus angenommen.",
+  "Eingang mittig an der Südfassade angenommen, da keine Straßenseite genannt wurde.",
+  "Je Obergeschoss 3 Balkone Süd (4.0 x 1.8 m) mit je einer Balkontür und einem Fenster angenommen.",
+  "Fassade Putz weiß, Flachdach mit Bitumenbahn und Attika 0.6 m, Treppenhauskopf als Technikaufbau angenommen.",
+  "Fenster 1.6 x 1.4 m mit Brüstung 0.9 m, Haustür 1.2 x 2.3 m zweiflügelig angenommen."
+ ],
+ "building_type": "mehrfamilienhaus",
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG1",
+   "elevation": 3.0
+  },
+  {
+   "name": "OG2",
+   "elevation": 6.0
+  },
+  {
+   "name": "OG3",
+   "elevation": 9.0
+  },
+  {
+   "name": "Dach",
+   "elevation": 12.0
+  }
+ ],
+ "storey_height": 3.0,
+ "slab_thickness": 0.3,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.6,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "steel_black",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Hauptbaukörper",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    18.0,
+    12.0
+   ],
+   "base_z": 0.34,
+   "storeys": 4,
+   "storey_height": 3.0,
+   "wall_thickness": 0.36,
+   "parapet_height": 0.6,
+   "facade": "plaster_white",
+   "roof": {
+    "type": "flat",
+    "material": "roof_bitumen"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.2,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.2,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 8.4,
+   "width": 1.2,
+   "height": 2.3,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "note": "Haupteingang Süd mit Vordach"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 11.0,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 14.2,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 2.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 8.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 14.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 2.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 8.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 14.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 2.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 8.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 14.0,
+   "width": 1.0,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Balkontür Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 3.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 9.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 15.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 3.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 9.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 15.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 3.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 9.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 3,
+   "offset": 15.5,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "note": "Fenster an Balkon Süd"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.2,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.4,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 7.6,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 10.8,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 14.0,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.2,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 4.4,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 7.6,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 10.8,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 14.0,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 1.2,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 4.4,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 7.6,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 10.8,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 14.0,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 1.2,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 4.4,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 7.6,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 10.8,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 3,
+   "offset": 14.0,
+   "width": 1.6,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 2,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 2,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 3,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 3,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 2,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 2,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 3,
+   "offset": 2.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 3,
+   "offset": 7.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  }
+ ],
+ "balconies": [
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 3.34,
+   "offset": 1.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 3.34,
+   "offset": 7.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 3.34,
+   "offset": 13.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 6.34,
+   "offset": 1.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 6.34,
+   "offset": 7.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 6.34,
+   "offset": 13.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 9.34,
+   "offset": 1.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 9.34,
+   "offset": 7.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "level": 9.34,
+   "offset": 13.0,
+   "width": 4.0,
+   "depth": 1.8,
+   "thickness": 0.2,
+   "railing": {
+    "height": 1.0,
+    "material": "steel_black",
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ]
+   }
+  }
+ ],
+ "components": [
+  {
+   "type": "steps",
+   "volume": "A",
+   "side": "S",
+   "u": 9.0,
+   "width": 2.0,
+   "count": 2,
+   "rise": 0.17,
+   "tread": 0.32,
+   "material": "stone_granite_grey"
+  },
+  {
+   "type": "technical_box",
+   "volume": "A",
+   "x": 7.9,
+   "y": 5.2,
+   "width": 2.2,
+   "depth": 1.6,
+   "height": 2.0,
+   "material": "metal_panel_silver",
+   "cap_material": "steel_galvanized"
+  },
+  {
+   "type": "downpipe",
+   "volume": "A",
+   "side": "S",
+   "u": 0.3,
+   "z0": 0.1,
+   "z1": 12.0,
+   "radius": 0.045,
+   "material": "zinc"
+  },
+  {
+   "type": "downpipe",
+   "volume": "A",
+   "side": "S",
+   "u": 17.7,
+   "z0": 0.1,
+   "z1": 12.0,
+   "radius": 0.045,
+   "material": "zinc"
+  }
+ ],
+ "site": {
+  "ground_extent": [
+   -20,
+   -20,
+   30,
+   30
+  ],
+  "paving": [
+   {
+    "name": "Eingangsplatte Süd",
+    "origin": [
+     7.0,
+     -4.0
+    ],
+    "size": [
+     4.0,
+     4.0
+    ],
+    "tile": [
+     1.0,
+     1.0
+    ],
+    "joint": 0.01,
+    "thickness": 0.06,
+    "material": "paving_concrete"
+   }
+  ]
+ },
+ "limitations": [
+  "Innere Treppenhaus- und Wohnungsaufteilung nicht abgebildet.",
+  "Balkonbrüstung als einfaches Stabgeländer, keine Detailausbildung."
+ ],
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     29.08,
+     -19.7,
+     1.65
+    ],
+    "target": [
+     9.0,
+     6.0,
+     5.18
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -11.08,
+     -19.7,
+     1.65
+    ],
+    "target": [
+     9.0,
+     6.0,
+     5.18
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     9.0,
+     -28.52,
+     1.65
+    ],
+    "target": [
+     9.0,
+     6.0,
+     5.18
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "street_n",
+    "position": [
+     9.0,
+     40.52,
+     1.65
+    ],
+    "target": [
+     9.0,
+     6.0,
+     5.18
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     31.42,
+     -22.7,
+     12.76
+    ],
+    "target": [
+     9.0,
+     6.0,
+     8.51
+    ],
+    "lens_mm": 32
+   }
+  ]
+ }
+}

@@ -1,0 +1,404 @@
+{
+ "spec_version": 1,
+ "name": "Skandinavisches Holzhaus",
+ "description": "Skandinavisches Holzhaus mit dunkler Holzfassade, Satteldach, Veranda und Holzstapel",
+ "assumptions": [
+  "Grundflaeche 10.0 x 7.5 m und Geschosshoehe 2.8 m angenommen.",
+  "Dachneigung 32 Grad, First in Ost-West-Richtung, Traufseiten Sued und Nord, Ueberstand 0.5 m angenommen.",
+  "Fassade in dunklem Thermoholz wood_thermo, Dach in anthrazit roof_tile_anthracite angenommen.",
+  "Veranda als Terrasse 6.0 x 3.0 m mittig vor der Suedfassade mit Pultvordach auf Holzstuetzen angenommen.",
+  "Weisse Fensterrahmen und verglaste Eingangstuer zur Veranda angenommen."
+ ],
+ "building_type": "efh_satteldach",
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "Dach",
+   "elevation": 2.8
+  }
+ ],
+ "storey_height": 2.8,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.24,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Haupthaus",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    10.0,
+    7.5
+   ],
+   "base_z": 0.34,
+   "storeys": 1,
+   "storey_height": 2.8,
+   "wall_thickness": 0.24,
+   "facade": "wood_thermo",
+   "roof": {
+    "type": "gable",
+    "ridge": "x",
+    "pitch_deg": 32,
+    "overhang": 0.5,
+    "material": "roof_tile_anthracite"
+   },
+   "facade_detail": {
+    "plinth": {
+     "height": 0.5,
+     "material": "stone_granite_grey"
+    }
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.6,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.4,
+   "width": 1.2,
+   "height": 2.1,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "glazed",
+   "panel": "wood_oak",
+   "frame": "paint_white",
+   "note": "Eingangstuer zur Veranda"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 7.2,
+   "width": 1.6,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.2,
+   "width": 1.4,
+   "height": 1.1,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.3,
+   "width": 1.4,
+   "height": 1.1,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 7.4,
+   "width": 1.4,
+   "height": 1.1,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 2.8,
+   "width": 1.4,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 2.8,
+   "width": 1.4,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 3.25,
+   "width": 1.0,
+   "height": 1.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white",
+   "note": "Giebelfenster Ost"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 3.25,
+   "width": 1.0,
+   "height": 1.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "paint_white",
+   "note": "Giebelfenster West"
+  }
+ ],
+ "components": [
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "S",
+   "u": 5.0,
+   "width": 6.0,
+   "depth": 3.0,
+   "z": 0.15,
+   "thickness": 0.15,
+   "material": "terrace_decking",
+   "railing": "bars",
+   "railing_height": 0.9,
+   "railing_material": "wood_oak"
+  },
+  {
+   "type": "canopy",
+   "volume": "A",
+   "side": "S",
+   "u": 5.0,
+   "width": 6.5,
+   "projection": 3.2,
+   "z": 2.4,
+   "kind": "shed",
+   "support": "posts",
+   "thickness": 0.14,
+   "material": "wood_pine",
+   "roof_material": "roof_tile_anthracite",
+   "note": "Verandadach"
+  },
+  {
+   "type": "steps",
+   "volume": "A",
+   "side": "S",
+   "u": 5.0,
+   "width": 1.6,
+   "count": 2,
+   "rise": 0.17,
+   "tread": 0.32,
+   "material": "concrete_light"
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 7.0,
+   "y": 3.75,
+   "width": 0.6,
+   "depth": 0.6,
+   "height": 1.0,
+   "material": "stone_granite_grey",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "S",
+   "material": "zinc"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "N",
+   "material": "zinc"
+  },
+  {
+   "type": "downpipe",
+   "volume": "A",
+   "side": "S",
+   "u": 0.4,
+   "material": "zinc"
+  },
+  {
+   "type": "downpipe",
+   "volume": "A",
+   "side": "N",
+   "u": 9.6,
+   "material": "zinc"
+  },
+  {
+   "type": "tree",
+   "x": 14.0,
+   "y": -3.0,
+   "height": 7.0,
+   "crown_radius": 2.8,
+   "kind": "deciduous"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     5.0,
+     -3.2
+    ],
+    [
+     5.0,
+     -8.0
+    ]
+   ],
+   "width": 1.2,
+   "material": "gravel_light"
+  }
+ ],
+ "limitations": [
+  "Holzstapel / Brennholzstapel an der Fassade ist als Bauteil nicht abbildbar und fehlt.",
+  "Verandadach als separates Pultvordach angenaehert, nicht als verlaengerte Dachflaeche.",
+  "Feine skandinavische Details wie Eckbretter, Sprossenteilung und Stapelhalter fehlen."
+ ],
+ "render": {
+  "sun": {
+   "azimuth_deg": 210.0,
+   "elevation_deg": 32.0
+  },
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     14.73,
+     -8.7,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.75,
+     2.26
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -4.73,
+     -8.7,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.75,
+     2.26
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     5.0,
+     -10.51,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.75,
+     2.26
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "street_n",
+    "position": [
+     5.0,
+     18.01,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.75,
+     2.26
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     15.79,
+     -10.06,
+     6.5
+    ],
+    "target": [
+     5.0,
+     3.75,
+     3.72
+    ],
+    "lens_mm": 32
+   },
+   {
+    "name": "hero_s",
+    "position": [
+     5.0,
+     -12.0,
+     1.7
+    ],
+    "target": [
+     5.0,
+     1.5,
+     2.5
+    ],
+    "lens_mm": 24
+   }
+  ]
+ },
+ "site": {}
+}

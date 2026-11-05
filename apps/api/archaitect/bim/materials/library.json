@@ -1,0 +1,3124 @@
+{
+ "_comment": "Single source of truth for materials. rgb = display colour in IFC viewers; shader = procedural Blender material (kinds: plaster, concrete, paving, painted, metal, glass, water, foliage, gravel, wood, fabric, brick, stone, tile, slate, thatch, lawn_soil, grass_hair, leaf). render_only entries are not offered to the interpreter. aliases help the interpreter map everyday words to a key. Erweiterung per tools/gen_materials.py.",
+ "plaster_white": {
+  "label": "Putz weiß",
+  "group": "Fassade",
+  "aliases": [
+   "weißer Putz",
+   "Putz",
+   "Kalkputz weiß"
+  ],
+  "rgb": [
+   0.93,
+   0.92,
+   0.88
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.8,
+    0.79,
+    0.75
+   ]
+  }
+ },
+ "plaster_beige": {
+  "label": "Putz beige",
+  "group": "Fassade",
+  "aliases": [
+   "beiger Putz",
+   "sandfarbener Putz"
+  ],
+  "rgb": [
+   0.85,
+   0.8,
+   0.68
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.68,
+    0.61,
+    0.48
+   ]
+  }
+ },
+ "plaster_anthracite": {
+  "label": "Putz anthrazit",
+  "group": "Fassade",
+  "aliases": [
+   "dunkler Putz",
+   "anthrazitfarbener Putz"
+  ],
+  "rgb": [
+   0.25,
+   0.25,
+   0.26
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.1,
+    0.1,
+    0.105
+   ]
+  }
+ },
+ "concrete_exposed": {
+  "label": "Sichtbeton",
+  "group": "Fassade",
+  "aliases": [
+   "Beton",
+   "Betonfassade",
+   "Sichtbetonfassade"
+  ],
+  "rgb": [
+   0.66,
+   0.66,
+   0.64
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.46,
+    0.46,
+    0.44
+   ]
+  }
+ },
+ "brick_red": {
+  "label": "Klinker rot",
+  "group": "Fassade",
+  "aliases": [
+   "Ziegel",
+   "Backstein",
+   "roter Klinker",
+   "Klinker"
+  ],
+  "rgb": [
+   0.55,
+   0.22,
+   0.15
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.34,
+    0.1,
+    0.06
+   ],
+   "col2": [
+    0.22,
+    0.06,
+    0.04
+   ],
+   "mortar": [
+    0.5,
+    0.49,
+    0.46
+   ]
+  }
+ },
+ "brick_buff": {
+  "label": "Klinker hell",
+  "group": "Fassade",
+  "aliases": [
+   "heller Klinker",
+   "gelber Klinker",
+   "Sandklinker"
+  ],
+  "rgb": [
+   0.76,
+   0.66,
+   0.48
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.52,
+    0.4,
+    0.24
+   ],
+   "col2": [
+    0.42,
+    0.32,
+    0.19
+   ],
+   "mortar": [
+    0.55,
+    0.53,
+    0.48
+   ]
+  }
+ },
+ "wood_larch": {
+  "label": "Holz Lärche",
+  "group": "Fassade",
+  "aliases": [
+   "Holzfassade",
+   "Holzverkleidung",
+   "Lärche"
+  ],
+  "rgb": [
+   0.6,
+   0.42,
+   0.25
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.35,
+    0.22,
+    0.12
+   ],
+   "c1": [
+    0.62,
+    0.42,
+    0.22
+   ]
+  }
+ },
+ "zinc": {
+  "label": "Zink",
+  "group": "Dach/Blech",
+  "aliases": [
+   "Titanzink",
+   "Zinkblech",
+   "Blech"
+  ],
+  "rgb": [
+   0.55,
+   0.57,
+   0.58
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.55,
+    0.57,
+    0.58
+   ],
+   "rough": 0.4
+  }
+ },
+ "steel_black": {
+  "label": "Stahl schwarz",
+  "group": "Metall",
+  "aliases": [
+   "schwarzer Stahl",
+   "Stahlprofil",
+   "schwarze Rahmen"
+  ],
+  "rgb": [
+   0.03,
+   0.03,
+   0.03
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.012,
+    0.012,
+    0.012
+   ],
+   "rough": 0.38
+  }
+ },
+ "alu_anthracite": {
+  "label": "Aluminium anthrazit",
+  "group": "Metall",
+  "aliases": [
+   "anthrazitfarbene Fenster",
+   "Fensterrahmen anthrazit",
+   "RAL 7016"
+  ],
+  "rgb": [
+   0.18,
+   0.19,
+   0.2
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.07,
+    0.075,
+    0.08
+   ],
+   "rough": 0.35
+  }
+ },
+ "aluminium": {
+  "label": "Aluminium natur",
+  "group": "Metall",
+  "aliases": [
+   "Aluminium",
+   "Alu"
+  ],
+  "rgb": [
+   0.75,
+   0.76,
+   0.77
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.78,
+    0.78,
+    0.8
+   ],
+   "rough": 0.32
+  }
+ },
+ "chrome": {
+  "label": "Chrom",
+  "group": "Metall",
+  "aliases": [
+   "verchromt",
+   "Edelstahl poliert"
+  ],
+  "rgb": [
+   0.85,
+   0.85,
+   0.85
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.92,
+    0.92,
+    0.93
+   ],
+   "rough": 0.07
+  }
+ },
+ "red_door": {
+  "label": "Rot lackiert",
+  "group": "Metall",
+  "aliases": [
+   "rote Tür",
+   "rot"
+  ],
+  "rgb": [
+   0.6,
+   0.05,
+   0.06
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.33,
+    0.012,
+    0.015
+   ],
+   "rough": 0.3
+  }
+ },
+ "glass_clear": {
+  "label": "Glas klar",
+  "group": "Glas",
+  "aliases": [
+   "Glas",
+   "Verglasung"
+  ],
+  "rgb": [
+   0.75,
+   0.85,
+   0.88
+  ],
+  "shader": {
+   "kind": "glass"
+  }
+ },
+ "paving_concrete": {
+  "label": "Betonplatten",
+  "group": "Außen",
+  "aliases": [
+   "Terrassenplatten",
+   "Platten",
+   "Pflaster"
+  ],
+  "rgb": [
+   0.78,
+   0.78,
+   0.75
+  ],
+  "shader": {
+   "kind": "paving",
+   "col": [
+    0.56,
+    0.55,
+    0.52
+   ]
+  }
+ },
+ "gravel": {
+  "label": "Kies",
+  "group": "Außen",
+  "aliases": [
+   "Splitt",
+   "Kiesbett"
+  ],
+  "rgb": [
+   0.62,
+   0.58,
+   0.52
+  ],
+  "shader": {
+   "kind": "gravel"
+  }
+ },
+ "water": {
+  "label": "Wasser",
+  "group": "Außen",
+  "aliases": [
+   "Pool",
+   "Teich"
+  ],
+  "rgb": [
+   0.1,
+   0.3,
+   0.4
+  ],
+  "shader": {
+   "kind": "water"
+  }
+ },
+ "boxwood": {
+  "label": "Buchs/Hecke",
+  "group": "Außen",
+  "aliases": [
+   "Hecke",
+   "Buchshecke"
+  ],
+  "rgb": [
+   0.1,
+   0.25,
+   0.08
+  ],
+  "shader": {
+   "kind": "foliage",
+   "c0": [
+    0.02,
+    0.05,
+    0.015
+   ],
+   "c1": [
+    0.07,
+    0.13,
+    0.03
+   ],
+   "scale": 14.0
+  }
+ },
+ "floor_oak": {
+  "label": "Eiche",
+  "group": "Innen",
+  "aliases": [
+   "Parkett",
+   "Eichenboden",
+   "Holzboden"
+  ],
+  "rgb": [
+   0.55,
+   0.4,
+   0.26
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.25,
+    0.14,
+    0.07
+   ],
+   "c1": [
+    0.45,
+    0.29,
+    0.15
+   ]
+  }
+ },
+ "walnut": {
+  "label": "Nussbaum",
+  "group": "Innen",
+  "aliases": [
+   "Nussbaumtür",
+   "Walnuss",
+   "dunkles Holz"
+  ],
+  "rgb": [
+   0.25,
+   0.15,
+   0.09
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.09,
+    0.05,
+    0.025
+   ],
+   "c1": [
+    0.2,
+    0.11,
+    0.055
+   ]
+  }
+ },
+ "interior_white": {
+  "label": "Innenputz weiß",
+  "group": "Innen",
+  "aliases": [
+   "Innenwand",
+   "weiße Wand innen"
+  ],
+  "rgb": [
+   0.9,
+   0.9,
+   0.88
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.75,
+    0.74,
+    0.71
+   ]
+  }
+ },
+ "fabric_grey": {
+  "label": "Stoff grau",
+  "group": "Innen",
+  "aliases": [
+   "graues Sofa",
+   "grauer Stoff"
+  ],
+  "rgb": [
+   0.35,
+   0.34,
+   0.32
+  ],
+  "shader": {
+   "kind": "fabric",
+   "col": [
+    0.16,
+    0.16,
+    0.15
+   ]
+  }
+ },
+ "fabric_sand": {
+  "label": "Stoff sand",
+  "group": "Innen",
+  "aliases": [
+   "Teppich sand",
+   "sandfarbener Stoff"
+  ],
+  "rgb": [
+   0.62,
+   0.55,
+   0.45
+  ],
+  "shader": {
+   "kind": "fabric",
+   "col": [
+    0.42,
+    0.36,
+    0.27
+   ]
+  }
+ },
+ "foliage": {
+  "label": "Laub",
+  "render_only": true,
+  "rgb": [
+   0.2,
+   0.35,
+   0.12
+  ],
+  "shader": {
+   "kind": "foliage"
+  }
+ },
+ "bark": {
+  "label": "Rinde",
+  "render_only": true,
+  "rgb": [
+   0.3,
+   0.25,
+   0.2
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.18,
+    0.15,
+    0.12
+   ]
+  }
+ },
+ "lawn_soil": {
+  "label": "Rasenboden",
+  "render_only": true,
+  "rgb": [
+   0.15,
+   0.3,
+   0.1
+  ],
+  "shader": {
+   "kind": "lawn_soil"
+  }
+ },
+ "grass_hair": {
+  "label": "Grashalm",
+  "render_only": true,
+  "rgb": [
+   0.2,
+   0.4,
+   0.12
+  ],
+  "shader": {
+   "kind": "grass_hair"
+  }
+ },
+ "leaf": {
+  "label": "Blatt",
+  "render_only": true,
+  "rgb": [
+   0.2,
+   0.4,
+   0.12
+  ],
+  "shader": {
+   "kind": "leaf"
+  }
+ },
+ "roof_tile_red": {
+  "label": "Dachziegel rot",
+  "group": "Dach/Blech",
+  "aliases": [
+   "Ziegeldach",
+   "Biberschwanz",
+   "rote Dachziegel",
+   "Dachpfannen"
+  ],
+  "rgb": [
+   0.55,
+   0.25,
+   0.17
+  ],
+  "shader": {
+   "kind": "tile",
+   "col1": [
+    0.46,
+    0.17,
+    0.1
+   ],
+   "col2": [
+    0.34,
+    0.11,
+    0.07
+   ],
+   "mortar": [
+    0.2,
+    0.12,
+    0.09
+   ]
+  }
+ },
+ "timber_dark": {
+  "label": "Fachwerkholz dunkel",
+  "group": "Fassade",
+  "aliases": [
+   "Fachwerk",
+   "dunkles Fachwerk",
+   "Eichenfachwerk",
+   "Balken"
+  ],
+  "rgb": [
+   0.2,
+   0.12,
+   0.07
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.07,
+    0.04,
+    0.02
+   ],
+   "c1": [
+    0.17,
+    0.1,
+    0.05
+   ]
+  }
+ },
+ "stone_plinth": {
+  "label": "Natursteinsockel",
+  "group": "Fassade",
+  "aliases": [
+   "Sockel",
+   "Bruchstein",
+   "Sandstein",
+   "Steinsockel"
+  ],
+  "rgb": [
+   0.55,
+   0.5,
+   0.43
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.45,
+    0.4,
+    0.33
+   ]
+  }
+ },
+ "cobblestone": {
+  "label": "Kopfsteinpflaster",
+  "group": "Außen",
+  "aliases": [
+   "Pflaster",
+   "Granitpflaster",
+   "Kopfstein"
+  ],
+  "rgb": [
+   0.5,
+   0.48,
+   0.45
+  ],
+  "shader": {
+   "kind": "paving",
+   "col": [
+    0.42,
+    0.4,
+    0.37
+   ]
+  }
+ },
+ "plaster_cream": {
+  "label": "Putz cremeweiß",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "Cremeputz",
+   "Elfenbein"
+  ],
+  "rgb": [
+   0.93,
+   0.89,
+   0.76
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.878,
+    0.811,
+    0.61
+   ]
+  }
+ },
+ "plaster_yellow": {
+  "label": "Putz gelb/ocker",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "gelber Putz",
+   "Ockerputz",
+   "Schlossgelb"
+  ],
+  "rgb": [
+   0.9,
+   0.76,
+   0.4
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.827,
+    0.61,
+    0.192
+   ]
+  }
+ },
+ "plaster_grey_light": {
+  "label": "Putz hellgrau",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "grauer Putz"
+  ],
+  "rgb": [
+   0.76,
+   0.76,
+   0.74
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.61,
+    0.61,
+    0.582
+   ]
+  }
+ },
+ "plaster_grey_mid": {
+  "label": "Putz mittelgrau",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "Betongrau Putz"
+  ],
+  "rgb": [
+   0.52,
+   0.52,
+   0.51
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.308,
+    0.308,
+    0.298
+   ]
+  }
+ },
+ "plaster_terracotta": {
+  "label": "Putz terrakotta",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "roter Putz",
+   "Terrakottaputz"
+  ],
+  "rgb": [
+   0.74,
+   0.4,
+   0.28
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.582,
+    0.192,
+    0.101
+   ]
+  }
+ },
+ "plaster_salmon": {
+  "label": "Putz lachs/rosa",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "rosa Putz"
+  ],
+  "rgb": [
+   0.88,
+   0.63,
+   0.55
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.794,
+    0.435,
+    0.341
+   ]
+  }
+ },
+ "plaster_green_pale": {
+  "label": "Putz mintgrün",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "grüner Putz"
+  ],
+  "rgb": [
+   0.73,
+   0.8,
+   0.68
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.568,
+    0.669,
+    0.499
+   ]
+  }
+ },
+ "plaster_blue_grey": {
+  "label": "Putz graublau",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "blauer Putz"
+  ],
+  "rgb": [
+   0.62,
+   0.69,
+   0.74
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.423,
+    0.513,
+    0.582
+   ]
+  }
+ },
+ "plaster_rough_white": {
+  "label": "Kratz-/Rauputz weiß",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "Rauputz",
+   "Kratzputz",
+   "Spritzputz"
+  ],
+  "rgb": [
+   0.92,
+   0.91,
+   0.87
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.861,
+    0.844,
+    0.778
+   ],
+   "grain_scale": 60.0,
+   "grain": 0.45,
+   "rough": 0.97
+  }
+ },
+ "plaster_lime_old": {
+  "label": "Kalkputz gealtert",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "Kalkputz",
+   "verwitterter Putz"
+  ],
+  "rgb": [
+   0.82,
+   0.78,
+   0.68
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.7,
+    0.639,
+    0.499
+   ],
+   "blot": 1.2,
+   "grain": 0.2
+  }
+ },
+ "plaster_timber_infill": {
+  "label": "Gefach weiß (Fachwerk)",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "Gefache",
+   "Lehmputz weiß"
+  ],
+  "rgb": [
+   0.9,
+   0.88,
+   0.8
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.827,
+    0.794,
+    0.669
+   ],
+   "grain_scale": 90.0,
+   "grain": 0.3,
+   "blot": 0.9
+  }
+ },
+ "brick_brown": {
+  "label": "Ziegel braun",
+  "group": "Fassade/Ziegel",
+  "aliases": [
+   "brauner Backstein"
+  ],
+  "rgb": [
+   0.45,
+   0.28,
+   0.2
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.132,
+    0.042,
+    0.019
+   ],
+   "col2": [
+    0.078,
+    0.024,
+    0.011
+   ],
+   "mortar": [
+    0.55,
+    0.53,
+    0.48
+   ]
+  }
+ },
+ "brick_dark": {
+  "label": "Klinker dunkel/blau-braun",
+  "group": "Fassade/Ziegel",
+  "aliases": [
+   "Klinker",
+   "dunkler Backstein"
+  ],
+  "rgb": [
+   0.3,
+   0.21,
+   0.19
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.05,
+    0.021,
+    0.017
+   ],
+   "col2": [
+    0.024,
+    0.011,
+    0.009
+   ],
+   "mortar": [
+    0.38,
+    0.37,
+    0.35
+   ]
+  }
+ },
+ "brick_yellow": {
+  "label": "Ziegel gelb (Hamburger)",
+  "group": "Fassade/Ziegel",
+  "aliases": [
+   "gelber Backstein",
+   "Handstrichziegel gelb"
+  ],
+  "rgb": [
+   0.8,
+   0.66,
+   0.4
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.527,
+    0.332,
+    0.1
+   ],
+   "col2": [
+    0.382,
+    0.234,
+    0.068
+   ],
+   "mortar": [
+    0.55,
+    0.53,
+    0.48
+   ]
+  }
+ },
+ "brick_orange": {
+  "label": "Ziegel orange",
+  "group": "Fassade/Ziegel",
+  "aliases": [
+   "oranger Backstein"
+  ],
+  "rgb": [
+   0.72,
+   0.38,
+   0.22
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.409,
+    0.088,
+    0.024
+   ],
+   "col2": [
+    0.264,
+    0.05,
+    0.015
+   ],
+   "mortar": [
+    0.55,
+    0.53,
+    0.48
+   ]
+  }
+ },
+ "brick_white": {
+  "label": "Ziegel weiß geschlämmt",
+  "group": "Fassade/Ziegel",
+  "aliases": [
+   "geschlämmter Backstein",
+   "weißer Backstein"
+  ],
+  "rgb": [
+   0.88,
+   0.86,
+   0.82
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.662,
+    0.627,
+    0.559
+   ],
+   "col2": [
+    0.527,
+    0.481,
+    0.409
+   ],
+   "mortar": [
+    0.8,
+    0.78,
+    0.74
+   ]
+  }
+ },
+ "brick_red_large": {
+  "label": "Ziegel rot Großformat",
+  "group": "Fassade/Ziegel",
+  "aliases": [
+   "Klosterformat"
+  ],
+  "rgb": [
+   0.55,
+   0.22,
+   0.16
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.214,
+    0.024,
+    0.011
+   ],
+   "col2": [
+    0.112,
+    0.013,
+    0.006
+   ],
+   "mortar": [
+    0.55,
+    0.53,
+    0.48
+   ],
+   "brick_w": 0.3,
+   "row_h": 0.085
+  }
+ },
+ "stone_sandstone_yellow": {
+  "label": "Sandstein gelb",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Sandstein"
+  ],
+  "rgb": [
+   0.8,
+   0.68,
+   0.46
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.569,
+    0.391,
+    0.159
+   ],
+   "col2": [
+    0.418,
+    0.271,
+    0.115
+   ],
+   "mortar": [
+    0.55,
+    0.5,
+    0.42
+   ]
+  }
+ },
+ "stone_sandstone_red": {
+  "label": "Sandstein rot",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Buntsandstein",
+   "roter Sandstein"
+  ],
+  "rgb": [
+   0.66,
+   0.38,
+   0.3
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.365,
+    0.103,
+    0.06
+   ],
+   "col2": [
+    0.25,
+    0.064,
+    0.039
+   ],
+   "mortar": [
+    0.5,
+    0.4,
+    0.36
+   ]
+  }
+ },
+ "stone_limestone": {
+  "label": "Kalkstein hell",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Kalkstein",
+   "Jurakalk"
+  ],
+  "rgb": [
+   0.84,
+   0.8,
+   0.7
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.636,
+    0.569,
+    0.418
+   ],
+   "col2": [
+    0.505,
+    0.446,
+    0.316
+   ],
+   "mortar": [
+    0.6,
+    0.58,
+    0.52
+   ]
+  }
+ },
+ "stone_granite_grey": {
+  "label": "Granit grau",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Granit"
+  ],
+  "rgb": [
+   0.55,
+   0.55,
+   0.56
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.24,
+    0.24,
+    0.25
+   ],
+   "col2": [
+    0.151,
+    0.151,
+    0.167
+   ],
+   "mortar": [
+    0.35,
+    0.35,
+    0.35
+   ]
+  }
+ },
+ "stone_basalt_dark": {
+  "label": "Basalt/Schiefer dunkel",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Basalt",
+   "Lavastein"
+  ],
+  "rgb": [
+   0.28,
+   0.28,
+   0.3
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.051,
+    0.051,
+    0.06
+   ],
+   "col2": [
+    0.023,
+    0.023,
+    0.029
+   ],
+   "mortar": [
+    0.15,
+    0.15,
+    0.15
+   ]
+  }
+ },
+ "stone_field": {
+  "label": "Feldstein/Bruchstein",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Bruchstein",
+   "Naturstein-Mauerwerk",
+   "Feldsteinmauer"
+  ],
+  "rgb": [
+   0.6,
+   0.56,
+   0.5
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.293,
+    0.25,
+    0.193
+   ],
+   "col2": [
+    0.159,
+    0.129,
+    0.103
+   ],
+   "mortar": [
+    0.42,
+    0.4,
+    0.36
+   ],
+   "brick_w": 0.38,
+   "row_h": 0.22,
+   "mortar_size": 0.04
+  }
+ },
+ "stone_ashlar_light": {
+  "label": "Quader hell (Werkstein)",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Werkstein",
+   "Quaderstein",
+   "Gewändestein"
+  ],
+  "rgb": [
+   0.82,
+   0.79,
+   0.72
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.602,
+    0.552,
+    0.446
+   ],
+   "col2": [
+    0.505,
+    0.461,
+    0.365
+   ],
+   "mortar": [
+    0.62,
+    0.6,
+    0.55
+   ],
+   "brick_w": 0.6,
+   "row_h": 0.3,
+   "mortar_size": 0.012
+  }
+ },
+ "stone_marble_white": {
+  "label": "Marmor weiß",
+  "group": "Fassade/Naturstein",
+  "aliases": [
+   "Marmor"
+  ],
+  "rgb": [
+   0.92,
+   0.91,
+   0.89
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.784,
+    0.765,
+    0.727
+   ],
+   "col2": [
+    0.708,
+    0.69,
+    0.654
+   ],
+   "mortar": [
+    0.7,
+    0.7,
+    0.7
+   ],
+   "brick_w": 0.8,
+   "row_h": 0.4,
+   "mortar_size": 0.004
+  }
+ },
+ "roof_tile_brown": {
+  "label": "Dachziegel braun",
+  "group": "Dach",
+  "aliases": [
+   "brauner Ziegel",
+   "Dachpfanne braun"
+  ],
+  "rgb": [
+   0.4,
+   0.22,
+   0.15
+  ],
+  "shader": {
+   "kind": "tile",
+   "col1": [
+    0.109,
+    0.028,
+    0.011
+   ],
+   "col2": [
+    0.065,
+    0.015,
+    0.007
+   ],
+   "mortar": [
+    0.026,
+    0.006,
+    0.003
+   ]
+  }
+ },
+ "roof_tile_anthracite": {
+  "label": "Dachziegel anthrazit",
+  "group": "Dach",
+  "aliases": [
+   "anthrazite Dachpfanne",
+   "Betondachstein anthrazit"
+  ],
+  "rgb": [
+   0.2,
+   0.2,
+   0.22
+  ],
+  "shader": {
+   "kind": "tile",
+   "col1": [
+    0.022,
+    0.022,
+    0.028
+   ],
+   "col2": [
+    0.01,
+    0.01,
+    0.013
+   ],
+   "mortar": [
+    0.004,
+    0.004,
+    0.005
+   ]
+  }
+ },
+ "roof_tile_black_glazed": {
+  "label": "Dachziegel schwarz glasiert",
+  "group": "Dach",
+  "aliases": [
+   "glasierte Pfanne"
+  ],
+  "rgb": [
+   0.09,
+   0.09,
+   0.1
+  ],
+  "shader": {
+   "kind": "tile",
+   "col1": [
+    0.004,
+    0.004,
+    0.005
+   ],
+   "col2": [
+    0.001,
+    0.001,
+    0.001
+   ],
+   "mortar": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rough": 0.35
+  }
+ },
+ "roof_slate": {
+  "label": "Naturschiefer",
+  "group": "Dach",
+  "aliases": [
+   "Schieferdach",
+   "Schiefer",
+   "Schieferdeckung"
+  ],
+  "rgb": [
+   0.24,
+   0.26,
+   0.29
+  ],
+  "shader": {
+   "kind": "slate",
+   "col1": [
+    0.034,
+    0.041,
+    0.052
+   ],
+   "col2": [
+    0.015,
+    0.02,
+    0.028
+   ],
+   "mortar": [
+    0.006,
+    0.008,
+    0.011
+   ]
+  }
+ },
+ "roof_slate_scallop": {
+  "label": "Schiefer Schuppendeckung",
+  "group": "Dach",
+  "aliases": [
+   "Schuppenschiefer"
+  ],
+  "rgb": [
+   0.22,
+   0.24,
+   0.27
+  ],
+  "shader": {
+   "kind": "slate",
+   "col1": [
+    0.028,
+    0.034,
+    0.044
+   ],
+   "col2": [
+    0.013,
+    0.015,
+    0.022
+   ],
+   "mortar": [
+    0.005,
+    0.006,
+    0.009
+   ],
+   "brick_w": 0.22,
+   "row_h": 0.22
+  }
+ },
+ "roof_wood_shingle": {
+  "label": "Holzschindel",
+  "group": "Dach",
+  "aliases": [
+   "Schindeldach",
+   "Holzschindeln"
+  ],
+  "rgb": [
+   0.42,
+   0.34,
+   0.26
+  ],
+  "shader": {
+   "kind": "slate",
+   "col1": [
+    0.122,
+    0.075,
+    0.041
+   ],
+   "col2": [
+    0.056,
+    0.037,
+    0.022
+   ],
+   "mortar": [
+    0.022,
+    0.015,
+    0.009
+   ],
+   "brick_w": 0.12,
+   "row_h": 0.18
+  }
+ },
+ "roof_thatch": {
+  "label": "Reet-/Strohdach",
+  "group": "Dach",
+  "aliases": [
+   "Reetdach",
+   "Strohdach"
+  ],
+  "rgb": [
+   0.5,
+   0.42,
+   0.28
+  ],
+  "shader": {
+   "kind": "thatch",
+   "c0": [
+    0.12,
+    0.08,
+    0.03
+   ],
+   "c1": [
+    0.42,
+    0.32,
+    0.16
+   ]
+  }
+ },
+ "roof_zinc_standing": {
+  "label": "Stehfalz Zink",
+  "group": "Dach",
+  "aliases": [
+   "Zinkdach",
+   "Stehfalzdach"
+  ],
+  "rgb": [
+   0.55,
+   0.57,
+   0.58
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.4,
+    0.42,
+    0.44
+   ],
+   "rough": 0.45
+  }
+ },
+ "roof_copper": {
+  "label": "Kupfer (neu)",
+  "group": "Dach",
+  "aliases": [
+   "Kupferdach"
+  ],
+  "rgb": [
+   0.72,
+   0.42,
+   0.28
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.7,
+    0.3,
+    0.17
+   ],
+   "rough": 0.3
+  }
+ },
+ "roof_copper_patina": {
+  "label": "Kupfer patiniert (grün)",
+  "group": "Dach",
+  "aliases": [
+   "Patina",
+   "grünes Kupferdach",
+   "Kuppel grün"
+  ],
+  "rgb": [
+   0.4,
+   0.62,
+   0.55
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.1,
+    0.3,
+    0.24
+   ],
+   "rough": 0.6
+  }
+ },
+ "roof_bitumen": {
+  "label": "Bitumen/Flachdachbahn",
+  "group": "Dach",
+  "aliases": [
+   "Dachpappe",
+   "Flachdach schwarz"
+  ],
+  "rgb": [
+   0.15,
+   0.15,
+   0.15
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.05,
+    0.05,
+    0.05
+   ]
+  }
+ },
+ "roof_gravel_flat": {
+  "label": "Kiesschüttung Flachdach",
+  "group": "Dach",
+  "aliases": [
+   "Kiesdach"
+  ],
+  "rgb": [
+   0.6,
+   0.58,
+   0.54
+  ],
+  "shader": {
+   "kind": "gravel"
+  }
+ },
+ "wood_oak": {
+  "label": "Eiche natur",
+  "group": "Holz",
+  "aliases": [
+   "Eichenholz"
+  ],
+  "rgb": [
+   0.579,
+   0.47,
+   0.351
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.18,
+    0.1,
+    0.05
+   ],
+   "c1": [
+    0.42,
+    0.28,
+    0.15
+   ],
+   "scale": 3.0,
+   "distortion": 6.0,
+   "rough": 0.45
+  }
+ },
+ "wood_pine": {
+  "label": "Kiefer/Fichte hell",
+  "group": "Holz",
+  "aliases": [
+   "Fichte",
+   "Kiefer",
+   "Nadelholz"
+  ],
+  "rgb": [
+   0.768,
+   0.659,
+   0.502
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.4,
+    0.25,
+    0.12
+   ],
+   "c1": [
+    0.72,
+    0.55,
+    0.32
+   ],
+   "scale": 2.2,
+   "distortion": 6.0,
+   "rough": 0.45
+  }
+ },
+ "wood_cedar": {
+  "label": "Zeder/Lärche rötlich",
+  "group": "Holz",
+  "aliases": [
+   "Zeder"
+  ],
+  "rgb": [
+   0.678,
+   0.487,
+   0.359
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.3,
+    0.13,
+    0.07
+   ],
+   "c1": [
+    0.55,
+    0.28,
+    0.14
+   ],
+   "scale": 3.0,
+   "distortion": 6.0,
+   "rough": 0.45
+  }
+ },
+ "wood_thermo": {
+  "label": "Thermoholz dunkelbraun",
+  "group": "Holz",
+  "aliases": [
+   "Thermoesche"
+  ],
+  "rgb": [
+   0.435,
+   0.343,
+   0.256
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.1,
+    0.06,
+    0.03
+   ],
+   "c1": [
+    0.22,
+    0.13,
+    0.07
+   ],
+   "scale": 3.0,
+   "distortion": 6.0,
+   "rough": 0.45
+  }
+ },
+ "wood_weathered": {
+  "label": "Holz vergraut",
+  "group": "Holz",
+  "aliases": [
+   "vergrautes Holz",
+   "Silbergrau"
+  ],
+  "rgb": [
+   0.667,
+   0.648,
+   0.621
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.3,
+    0.28,
+    0.25
+   ],
+   "c1": [
+    0.52,
+    0.49,
+    0.45
+   ],
+   "scale": 3.0,
+   "distortion": 6.0,
+   "rough": 0.7
+  }
+ },
+ "timber_oak_aged": {
+  "label": "Eichenfachwerk gealtert",
+  "group": "Holz/Fachwerk",
+  "aliases": [
+   "Fachwerkbalken",
+   "Eichenbalken",
+   "Balken"
+  ],
+  "rgb": [
+   0.459,
+   0.389,
+   0.308
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.1,
+    0.07,
+    0.04
+   ],
+   "c1": [
+    0.26,
+    0.18,
+    0.11
+   ],
+   "scale": 1.4,
+   "distortion": 9.0,
+   "rough": 0.7
+  }
+ },
+ "timber_black": {
+  "label": "Fachwerk schwarz gestrichen",
+  "group": "Holz/Fachwerk",
+  "aliases": [
+   "schwarze Balken"
+  ],
+  "rgb": [
+   0.211,
+   0.19,
+   0.178
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.015,
+    0.012,
+    0.01
+   ],
+   "c1": [
+    0.05,
+    0.04,
+    0.035
+   ],
+   "scale": 1.4,
+   "distortion": 6.0,
+   "rough": 0.55
+  }
+ },
+ "timber_brown_dark": {
+  "label": "Fachwerk dunkelbraun gestrichen",
+  "group": "Holz/Fachwerk",
+  "aliases": [
+   "braune Balken",
+   "Fachwerk braun"
+  ],
+  "rgb": [
+   0.351,
+   0.262,
+   0.195
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.06,
+    0.03,
+    0.015
+   ],
+   "c1": [
+    0.14,
+    0.075,
+    0.04
+   ],
+   "scale": 1.4,
+   "distortion": 6.0,
+   "rough": 0.55
+  }
+ },
+ "timber_oxblood": {
+  "label": "Fachwerk ochsenblutrot",
+  "group": "Holz/Fachwerk",
+  "aliases": [
+   "rote Balken",
+   "Ochsenblut"
+  ],
+  "rgb": [
+   0.551,
+   0.244,
+   0.203
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.2,
+    0.03,
+    0.02
+   ],
+   "c1": [
+    0.34,
+    0.06,
+    0.04
+   ],
+   "scale": 1.4,
+   "distortion": 6.0,
+   "rough": 0.55
+  }
+ },
+ "terrace_decking": {
+  "label": "Terrassendielen Holz",
+  "group": "Außen",
+  "aliases": [
+   "Terrassenboden",
+   "Dielen außen"
+  ],
+  "rgb": [
+   0.579,
+   0.459,
+   0.335
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.2,
+    0.12,
+    0.06
+   ],
+   "c1": [
+    0.4,
+    0.24,
+    0.12
+   ],
+   "scale": 2.0,
+   "distortion": 6.0,
+   "rough": 0.6
+  }
+ },
+ "floor_parquet_light": {
+  "label": "Parkett hell (Ahorn/Esche)",
+  "group": "Innen",
+  "aliases": [
+   "Parkett",
+   "heller Boden"
+  ],
+  "rgb": [
+   0.822,
+   0.73,
+   0.587
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.52,
+    0.38,
+    0.22
+   ],
+   "c1": [
+    0.78,
+    0.62,
+    0.4
+   ],
+   "scale": 2.5,
+   "distortion": 6.0,
+   "rough": 0.45
+  }
+ },
+ "floor_parquet_dark": {
+  "label": "Parkett dunkel (Räuchereiche)",
+  "group": "Innen",
+  "aliases": [
+   "dunkles Parkett",
+   "Räuchereiche"
+  ],
+  "rgb": [
+   0.435,
+   0.351,
+   0.268
+  ],
+  "shader": {
+   "kind": "wood",
+   "c0": [
+    0.1,
+    0.06,
+    0.03
+   ],
+   "c1": [
+    0.22,
+    0.14,
+    0.08
+   ],
+   "scale": 2.5,
+   "distortion": 6.0,
+   "rough": 0.45
+  }
+ },
+ "paint_white": {
+  "label": "Lack weiß",
+  "group": "Anstrich",
+  "aliases": [
+   "weiße Fenster",
+   "weißer Rahmen",
+   "RAL 9016"
+  ],
+  "rgb": [
+   0.95,
+   0.95,
+   0.93
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.893,
+    0.893,
+    0.852
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_cream": {
+  "label": "Lack cremeweiß",
+  "group": "Anstrich",
+  "aliases": [
+   "cremefarbene Fenster"
+  ],
+  "rgb": [
+   0.9,
+   0.86,
+   0.72
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.793,
+    0.718,
+    0.485
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_grey_light": {
+  "label": "Lack hellgrau",
+  "group": "Anstrich",
+  "aliases": [
+   "RAL 7035"
+  ],
+  "rgb": [
+   0.78,
+   0.79,
+   0.78
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.579,
+    0.595,
+    0.579
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_anthracite": {
+  "label": "Lack anthrazit",
+  "group": "Anstrich",
+  "aliases": [
+   "RAL 7016",
+   "anthrazit"
+  ],
+  "rgb": [
+   0.22,
+   0.24,
+   0.26
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.036,
+    0.043,
+    0.052
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_black": {
+  "label": "Lack schwarz",
+  "group": "Anstrich",
+  "aliases": [
+   "RAL 9005"
+  ],
+  "rgb": [
+   0.05,
+   0.05,
+   0.05
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.001,
+    0.001,
+    0.001
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_green_dark": {
+  "label": "Lack Tannengrün",
+  "group": "Anstrich",
+  "aliases": [
+   "Fensterladen grün",
+   "RAL 6009",
+   "dunkelgrün"
+  ],
+  "rgb": [
+   0.12,
+   0.25,
+   0.17
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.009,
+    0.047,
+    0.02
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_green_sage": {
+  "label": "Lack Salbeigrün",
+  "group": "Anstrich",
+  "aliases": [
+   "salbei",
+   "hellgrün"
+  ],
+  "rgb": [
+   0.55,
+   0.64,
+   0.5
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.268,
+    0.375,
+    0.218
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_blue_dark": {
+  "label": "Lack Dunkelblau",
+  "group": "Anstrich",
+  "aliases": [
+   "blaue Tür",
+   "RAL 5011"
+  ],
+  "rgb": [
+   0.1,
+   0.18,
+   0.33
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.006,
+    0.023,
+    0.087
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_blue_light": {
+  "label": "Lack Taubenblau",
+  "group": "Anstrich",
+  "aliases": [
+   "hellblau",
+   "RAL 5014"
+  ],
+  "rgb": [
+   0.5,
+   0.62,
+   0.73
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.218,
+    0.349,
+    0.5
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_red_sweden": {
+  "label": "Lack Schwedenrot",
+  "group": "Anstrich",
+  "aliases": [
+   "Falunrot",
+   "Schwedenrot"
+  ],
+  "rgb": [
+   0.5,
+   0.14,
+   0.1
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.218,
+    0.013,
+    0.006
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_red_bright": {
+  "label": "Lack Rot (Tür)",
+  "group": "Anstrich",
+  "aliases": [
+   "rote Fensterläden",
+   "RAL 3000"
+  ],
+  "rgb": [
+   0.6,
+   0.08,
+   0.07
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.325,
+    0.004,
+    0.003
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_brown": {
+  "label": "Lack Braun",
+  "group": "Anstrich",
+  "aliases": [
+   "braune Fenster",
+   "RAL 8014"
+  ],
+  "rgb": [
+   0.28,
+   0.17,
+   0.1
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.061,
+    0.02,
+    0.006
+   ],
+   "rough": 0.42
+  }
+ },
+ "paint_yellow": {
+  "label": "Lack Gelb",
+  "group": "Anstrich",
+  "aliases": [
+   "gelbe Tür"
+  ],
+  "rgb": [
+   0.88,
+   0.7,
+   0.2
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.755,
+    0.456,
+    0.029
+   ],
+   "rough": 0.42
+  }
+ },
+ "copper": {
+  "label": "Kupfer blank",
+  "group": "Metall",
+  "aliases": [
+   "Kupfer"
+  ],
+  "rgb": [
+   0.8,
+   0.48,
+   0.34
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.85,
+    0.42,
+    0.27
+   ],
+   "rough": 0.25
+  }
+ },
+ "copper_patina": {
+  "label": "Kupfer grün patiniert",
+  "group": "Metall",
+  "aliases": [
+   "Grünspan"
+  ],
+  "rgb": [
+   0.4,
+   0.62,
+   0.55
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.12,
+    0.33,
+    0.26
+   ],
+   "rough": 0.6
+  }
+ },
+ "brass": {
+  "label": "Messing",
+  "group": "Metall",
+  "aliases": [
+   "Messing",
+   "Gold"
+  ],
+  "rgb": [
+   0.8,
+   0.65,
+   0.3
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.85,
+    0.62,
+    0.2
+   ],
+   "rough": 0.25
+  }
+ },
+ "cast_iron_black": {
+  "label": "Gusseisen schwarz",
+  "group": "Metall",
+  "aliases": [
+   "Gusseisen",
+   "Schmiedeeisen",
+   "Geländer schwarz"
+  ],
+  "rgb": [
+   0.08,
+   0.08,
+   0.08
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.007,
+    0.007,
+    0.008
+   ],
+   "rough": 0.55
+  }
+ },
+ "steel_galvanized": {
+  "label": "Stahl verzinkt",
+  "group": "Metall",
+  "aliases": [
+   "feuerverzinkt",
+   "Zinkstahl"
+  ],
+  "rgb": [
+   0.62,
+   0.64,
+   0.65
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.55,
+    0.57,
+    0.58
+   ],
+   "rough": 0.5
+  }
+ },
+ "steel_corten": {
+  "label": "Cortenstahl",
+  "group": "Metall",
+  "aliases": [
+   "Corten",
+   "Rost"
+  ],
+  "rgb": [
+   0.45,
+   0.25,
+   0.15
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.18,
+    0.07,
+    0.035
+   ],
+   "rough": 0.75
+  }
+ },
+ "alu_white": {
+  "label": "Aluminium weiß",
+  "group": "Metall",
+  "aliases": [
+   "Alu weiß"
+  ],
+  "rgb": [
+   0.93,
+   0.93,
+   0.92
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.85,
+    0.85,
+    0.83
+   ],
+   "rough": 0.38
+  }
+ },
+ "alu_bronze": {
+  "label": "Aluminium bronze",
+  "group": "Metall",
+  "aliases": [
+   "Alu bronze",
+   "Bronze eloxiert"
+  ],
+  "rgb": [
+   0.35,
+   0.28,
+   0.22
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.15,
+    0.1,
+    0.07
+   ],
+   "rough": 0.4
+  }
+ },
+ "lead_grey": {
+  "label": "Blei/Blech grau",
+  "group": "Metall",
+  "aliases": [
+   "Bleiblech",
+   "Verwahrung"
+  ],
+  "rgb": [
+   0.45,
+   0.46,
+   0.48
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.18,
+    0.19,
+    0.2
+   ],
+   "rough": 0.55
+  }
+ },
+ "glass_tinted_grey": {
+  "label": "Glas getönt grau",
+  "group": "Glas",
+  "aliases": [
+   "Sonnenschutzglas",
+   "graues Glas"
+  ],
+  "rgb": [
+   0.5,
+   0.55,
+   0.55
+  ],
+  "shader": {
+   "kind": "glass",
+   "tint": [
+    0.6,
+    0.65,
+    0.65
+   ]
+  }
+ },
+ "glass_tinted_green": {
+  "label": "Glas grünlich",
+  "group": "Glas",
+  "aliases": [
+   "grünes Glas",
+   "Antikglas"
+  ],
+  "rgb": [
+   0.6,
+   0.75,
+   0.68
+  ],
+  "shader": {
+   "kind": "glass",
+   "tint": [
+    0.72,
+    0.9,
+    0.8
+   ]
+  }
+ },
+ "glass_frosted": {
+  "label": "Glas satiniert",
+  "group": "Glas",
+  "aliases": [
+   "Milchglas",
+   "satiniertes Glas"
+  ],
+  "rgb": [
+   0.9,
+   0.93,
+   0.92
+  ],
+  "shader": {
+   "kind": "glass",
+   "tint": [
+    0.95,
+    0.97,
+    0.96
+   ],
+   "rough": 0.35
+  }
+ },
+ "paving_granite": {
+  "label": "Granitpflaster",
+  "group": "Außen",
+  "aliases": [
+   "Kopfsteinpflaster Granit"
+  ],
+  "rgb": [
+   0.52,
+   0.52,
+   0.53
+  ],
+  "shader": {
+   "kind": "paving",
+   "col": [
+    0.3,
+    0.3,
+    0.31
+   ],
+   "scale": 14.0
+  }
+ },
+ "paving_flagstone": {
+  "label": "Natursteinplatten",
+  "group": "Außen",
+  "aliases": [
+   "Sandsteinplatten",
+   "Terrasse Naturstein",
+   "Gehwegplatten"
+  ],
+  "rgb": [
+   0.66,
+   0.6,
+   0.5
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.4,
+    0.33,
+    0.24
+   ],
+   "col2": [
+    0.32,
+    0.26,
+    0.19
+   ],
+   "mortar": [
+    0.2,
+    0.18,
+    0.16
+   ],
+   "brick_w": 0.6,
+   "row_h": 0.4,
+   "mortar_size": 0.02
+  }
+ },
+ "paving_clinker": {
+  "label": "Klinkerpflaster",
+  "group": "Außen",
+  "aliases": [
+   "Ziegelpflaster",
+   "Klinkerweg"
+  ],
+  "rgb": [
+   0.55,
+   0.3,
+   0.22
+  ],
+  "shader": {
+   "kind": "brick",
+   "col1": [
+    0.3,
+    0.1,
+    0.06
+   ],
+   "col2": [
+    0.22,
+    0.07,
+    0.045
+   ],
+   "mortar": [
+    0.3,
+    0.29,
+    0.27
+   ],
+   "brick_w": 0.22,
+   "row_h": 0.07
+  }
+ },
+ "asphalt": {
+  "label": "Asphalt",
+  "group": "Außen",
+  "aliases": [
+   "Straße",
+   "Asphaltdecke"
+  ],
+  "rgb": [
+   0.22,
+   0.22,
+   0.23
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.04,
+    0.04,
+    0.045
+   ]
+  }
+ },
+ "concrete_light": {
+  "label": "Beton hell geschliffen",
+  "group": "Außen",
+  "aliases": [
+   "heller Beton",
+   "Sichtbeton hell"
+  ],
+  "rgb": [
+   0.72,
+   0.72,
+   0.7
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.48,
+    0.48,
+    0.46
+   ]
+  }
+ },
+ "gravel_light": {
+  "label": "Kies hell",
+  "group": "Außen",
+  "aliases": [
+   "Kiesbett",
+   "Splitt"
+  ],
+  "rgb": [
+   0.78,
+   0.74,
+   0.65
+  ],
+  "shader": {
+   "kind": "gravel"
+  }
+ },
+ "floor_tile_grey": {
+  "label": "Fliese grau",
+  "group": "Innen",
+  "aliases": [
+   "Feinsteinzeug grau",
+   "Fliesen"
+  ],
+  "rgb": [
+   0.55,
+   0.55,
+   0.55
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.28,
+    0.28,
+    0.28
+   ],
+   "col2": [
+    0.24,
+    0.24,
+    0.24
+   ],
+   "mortar": [
+    0.12,
+    0.12,
+    0.12
+   ],
+   "brick_w": 0.6,
+   "row_h": 0.6,
+   "mortar_size": 0.006,
+   "offset": 0.0,
+   "rough": 0.3
+  }
+ },
+ "floor_tile_white": {
+  "label": "Fliese weiß",
+  "group": "Innen",
+  "aliases": [
+   "weiße Fliesen",
+   "Badfliesen"
+  ],
+  "rgb": [
+   0.9,
+   0.9,
+   0.88
+  ],
+  "shader": {
+   "kind": "stone",
+   "col1": [
+    0.78,
+    0.78,
+    0.76
+   ],
+   "col2": [
+    0.74,
+    0.74,
+    0.72
+   ],
+   "mortar": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "brick_w": 0.3,
+   "row_h": 0.3,
+   "mortar_size": 0.006,
+   "offset": 0.0,
+   "rough": 0.25
+  }
+ },
+ "plaster_interior_cream": {
+  "label": "Wand innen creme",
+  "group": "Innen",
+  "aliases": [
+   "Wandfarbe creme"
+  ],
+  "rgb": [
+   0.9,
+   0.86,
+   0.74
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.827,
+    0.762,
+    0.582
+   ],
+   "grain": 0.04
+  }
+ },
+ "plaster_interior_grey": {
+  "label": "Wand innen grau",
+  "group": "Innen",
+  "aliases": [
+   "Wandfarbe grau"
+  ],
+  "rgb": [
+   0.62,
+   0.62,
+   0.6
+  ],
+  "shader": {
+   "kind": "plaster",
+   "col": [
+    0.423,
+    0.423,
+    0.399
+   ],
+   "grain": 0.04
+  }
+ },
+ "fabric_blue": {
+  "label": "Stoff blau",
+  "group": "Innen",
+  "aliases": [
+   "blaues Sofa"
+  ],
+  "rgb": [
+   0.2,
+   0.28,
+   0.42
+  ],
+  "shader": {
+   "kind": "fabric",
+   "col": [
+    0.03,
+    0.06,
+    0.14
+   ]
+  }
+ },
+ "fabric_green": {
+  "label": "Stoff grün",
+  "group": "Innen",
+  "aliases": [
+   "grünes Polster"
+  ],
+  "rgb": [
+   0.25,
+   0.38,
+   0.28
+  ],
+  "shader": {
+   "kind": "fabric",
+   "col": [
+    0.04,
+    0.12,
+    0.06
+   ]
+  }
+ },
+ "leather_brown": {
+  "label": "Leder braun",
+  "group": "Innen",
+  "aliases": [
+   "Leder",
+   "Ledersofa"
+  ],
+  "rgb": [
+   0.35,
+   0.2,
+   0.12
+  ],
+  "shader": {
+   "kind": "painted",
+   "col": [
+    0.1,
+    0.04,
+    0.02
+   ],
+   "rough": 0.5
+  }
+ },
+ "solar_panel": {
+  "label": "Solarmodul (PV)",
+  "group": "Dach",
+  "aliases": [
+   "Photovoltaik",
+   "PV-Modul",
+   "Solarpaneel"
+  ],
+  "rgb": [
+   0.08,
+   0.11,
+   0.2
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.015,
+    0.03,
+    0.09
+   ],
+   "rough": 0.18
+  }
+ },
+ "metal_corrugated": {
+  "label": "Trapezblech",
+  "group": "Metall",
+  "aliases": [
+   "Wellblech",
+   "Profilblech",
+   "Trapezblech grau"
+  ],
+  "rgb": [
+   0.5,
+   0.52,
+   0.54
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.3,
+    0.32,
+    0.34
+   ],
+   "rough": 0.6
+  }
+ },
+ "metal_panel_anthracite": {
+  "label": "Metallpaneel anthrazit",
+  "group": "Metall",
+  "aliases": [
+   "Alu-Verbundplatte",
+   "Metallfassade dunkel"
+  ],
+  "rgb": [
+   0.2,
+   0.21,
+   0.23
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.07,
+    0.075,
+    0.085
+   ],
+   "rough": 0.35
+  }
+ },
+ "metal_panel_silver": {
+  "label": "Metallpaneel silber",
+  "group": "Metall",
+  "aliases": [
+   "Aluminiumfassade",
+   "Alupaneel"
+  ],
+  "rgb": [
+   0.72,
+   0.74,
+   0.75
+  ],
+  "shader": {
+   "kind": "metal",
+   "col": [
+    0.7,
+    0.72,
+    0.73
+   ],
+   "rough": 0.3
+  }
+ },
+ "fibre_cement_grey": {
+  "label": "Faserzementplatte grau",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "Eternit",
+   "Faserzement"
+  ],
+  "rgb": [
+   0.55,
+   0.56,
+   0.55
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.28,
+    0.285,
+    0.28
+   ]
+  }
+ },
+ "fibre_cement_anthracite": {
+  "label": "Faserzementplatte anthrazit",
+  "group": "Fassade/Putz",
+  "aliases": [
+   "Faserzement dunkel"
+  ],
+  "rgb": [
+   0.24,
+   0.25,
+   0.26
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.05,
+    0.052,
+    0.056
+   ]
+  }
+ },
+ "glass_curtain_blue": {
+  "label": "Glas Vorhangfassade blau",
+  "group": "Glas",
+  "aliases": [
+   "Bürohausglas",
+   "Curtain Wall"
+  ],
+  "rgb": [
+   0.45,
+   0.62,
+   0.72
+  ],
+  "shader": {
+   "kind": "glass",
+   "tint": [
+    0.55,
+    0.75,
+    0.9
+   ]
+  }
+ },
+ "glass_curtain_dark": {
+  "label": "Glas Vorhangfassade dunkel",
+  "group": "Glas",
+  "aliases": [
+   "Spiegelglas dunkel",
+   "Glasfassade dunkel"
+  ],
+  "rgb": [
+   0.25,
+   0.32,
+   0.36
+  ],
+  "shader": {
+   "kind": "glass",
+   "tint": [
+    0.35,
+    0.45,
+    0.5
+   ]
+  }
+ },
+ "roof_sedum": {
+  "label": "Gründach (Sedum)",
+  "group": "Dach",
+  "aliases": [
+   "Gründach",
+   "extensive Dachbegrünung"
+  ],
+  "rgb": [
+   0.38,
+   0.5,
+   0.28
+  ],
+  "shader": {
+   "kind": "grass_hair",
+   "col": [
+    0.18,
+    0.3,
+    0.1
+   ]
+  }
+ },
+ "soil_dark": {
+  "label": "Erde dunkel (Beet)",
+  "group": "Außen",
+  "aliases": [
+   "Mutterboden",
+   "Beeterde"
+  ],
+  "rgb": [
+   0.17,
+   0.11,
+   0.07
+  ],
+  "shader": {
+   "kind": "concrete",
+   "col": [
+    0.03,
+    0.02,
+    0.012
+   ]
+  }
+ }
+}

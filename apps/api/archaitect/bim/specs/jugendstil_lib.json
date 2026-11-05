@@ -1,0 +1,821 @@
+{
+ "spec_version": 1,
+ "name": "Jugendstilvilla",
+ "description": "Jugendstilvilla mit Rundturm, Erker, Mansarddach, rotem Sandstein, Rundbogenfenstern und Zahnschnitt-Gesims",
+ "building_type": "villa_historisch",
+ "assumptions": [
+  "Grundfläche 12,5 x 10 m, drei Geschosse über hohem Sockel; Rundturm an der Südostecke.",
+  "Lachsfarbener Putz, roter Sandstein, Mansarddach mit Biberschwanz-Ziegeln."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG1",
+   "elevation": 3.3
+  },
+  {
+   "name": "OG2",
+   "elevation": 6.6
+  },
+  {
+   "name": "Dach",
+   "elevation": 9.9
+  }
+ ],
+ "storey_height": 3.3,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Villa",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    12.5,
+    10.0
+   ],
+   "base_z": 0.8,
+   "storeys": 3,
+   "storey_height": 3.3,
+   "wall_thickness": 0.45,
+   "facade": "plaster_salmon",
+   "roof": {
+    "type": "mansard",
+    "ridge": "y",
+    "pitch_deg": 32,
+    "lower_pitch_deg": 72,
+    "lower_height": 2.4,
+    "overhang": 0.5,
+    "material": "roof_tile_red"
+   },
+   "facade_detail": {
+    "plinth": {
+     "height": 0.8,
+     "material": "stone_sandstone_red"
+    }
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 2.25,
+   "width": 1.5,
+   "height": 2.9,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   },
+   "frame": "paint_green_dark",
+   "top": "round_arch"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.34,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "round_arch",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 7.06,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "round_arch",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 9.78,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "round_arch",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.62,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "round_arch",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 4.34,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "round_arch",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 7.06,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "round_arch",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 9.78,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "round_arch",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 1.62,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 4.34,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 7.06,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 9.78,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_sandstone_red",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.62,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.34,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 7.06,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 9.78,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.62,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 4.34,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 7.06,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 9.78,
+   "width": 1.1,
+   "height": 2.0,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 1.62,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 4.34,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 7.06,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 9.78,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 1.67,
+   "width": 1.1,
+   "height": 1.8,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 4.45,
+   "width": 1.1,
+   "height": 1.8,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 7.22,
+   "width": 1.1,
+   "height": 1.8,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 1.67,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.7,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 4.45,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.7,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 7.22,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.7,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 2,
+   "offset": 1.67,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 2,
+   "offset": 4.45,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 2,
+   "offset": 7.22,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.67,
+   "width": 1.1,
+   "height": 1.8,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 4.45,
+   "width": 1.1,
+   "height": 1.8,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 7.22,
+   "width": 1.1,
+   "height": 1.8,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 1.67,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.7,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 4.45,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.7,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 7.22,
+   "width": 1.1,
+   "height": 1.9,
+   "sill": 0.7,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 2,
+   "offset": 1.67,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 2,
+   "offset": 4.45,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 2,
+   "offset": 7.22,
+   "width": 1.1,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement"
+  }
+ ],
+ "components": [
+  {
+   "type": "tower",
+   "volume": "A",
+   "x": 11.2,
+   "y": 1.3,
+   "radius": 1.9,
+   "z0": 0.0,
+   "z1": 10.4,
+   "sides": 12,
+   "roof": "cone",
+   "roof_height": 4.4,
+   "roof_overhang": 0.4,
+   "material": "plaster_salmon",
+   "roof_material": "roof_copper_patina",
+   "band": true,
+   "band_material": "stone_sandstone_red",
+   "finial": true,
+   "slits": 2,
+   "slit_angle": 120,
+   "slit_z": 4.5
+  },
+  {
+   "type": "bay",
+   "volume": "A",
+   "side": "N",
+   "u": 6.25,
+   "width": 3.2,
+   "projection": 0.9,
+   "z0": 0.0,
+   "z1": 7.2,
+   "kind": "box",
+   "sill": 0.8,
+   "material": "plaster_salmon",
+   "frame": "paint_green_dark",
+   "roof_material": "zinc"
+  },
+  {
+   "type": "canopy",
+   "volume": "A",
+   "side": "S",
+   "u": 3.0,
+   "width": 2.6,
+   "projection": 1.5,
+   "z": 3.0,
+   "kind": "gable",
+   "support": "brackets",
+   "material": "paint_green_dark",
+   "roof_material": "zinc"
+  },
+  {
+   "type": "steps",
+   "volume": "A",
+   "side": "S",
+   "u": 3.0,
+   "width": 2.2,
+   "count": 4,
+   "rise": 0.2,
+   "tread": 0.32,
+   "material": "stone_sandstone_red"
+  },
+  {
+   "type": "cornice",
+   "volume": "A",
+   "side": "all",
+   "z": 9.9,
+   "height": 0.4,
+   "projection": 0.4,
+   "profile": "cove",
+   "material": "stone_sandstone_red"
+  },
+  {
+   "type": "dentil",
+   "volume": "A",
+   "side": "S",
+   "z": 9.5,
+   "width": 0.1,
+   "height": 0.1,
+   "spacing": 0.22,
+   "material": "stone_sandstone_red"
+  },
+  {
+   "type": "quoins",
+   "volume": "A",
+   "width": 0.55,
+   "course": 0.35,
+   "z0": 0.8,
+   "z1": 10.0,
+   "material": "stone_sandstone_red"
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 4.0,
+   "y": 5.0,
+   "width": 0.8,
+   "depth": 0.8,
+   "height": 1.4,
+   "material": "brick_red",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "fence",
+   "points": [
+    [
+     -2.0,
+     -6.0
+    ],
+    [
+     14.5,
+     -6.0
+    ]
+   ],
+   "kind": "picket",
+   "height": 1.1,
+   "material": "cast_iron_black"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     3.0,
+     -1.5
+    ],
+    [
+     3.0,
+     -6.0
+    ]
+   ],
+   "width": 1.6,
+   "material": "paving_clinker"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "all",
+   "material": "zinc"
+  }
+ ],
+ "site": {},
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     28,
+     -17,
+     1.65
+    ],
+    "target": [
+     6,
+     5,
+     5.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -16,
+     -17,
+     1.65
+    ],
+    "target": [
+     6,
+     5,
+     5.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     6,
+     -23.6,
+     1.65
+    ],
+    "target": [
+     6,
+     5,
+     5.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     30.2,
+     -19.2,
+     10
+    ],
+    "target": [
+     6,
+     5,
+     5.0
+    ],
+    "lens_mm": 28
+   }
+  ]
+ }
+}

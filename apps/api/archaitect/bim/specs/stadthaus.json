@@ -1,0 +1,75 @@
+{
+  "spec_version": 1,
+  "name": "Stadthaus",
+  "description": "Interpretiert aus dem Testtext: 'Zweigeschossiges Stadthaus, ca. 10 x 12 m, Flachdach mit Dachterrasse, grosse Glasfront zum Garten im EG, Balkon ueber die ganze Breite im OG, Holzhaustuer zur Strasse.'",
+  "assumptions": [
+    "Garten nach Sueden, Strasse im Norden (Text nennt keine Himmelsrichtung).",
+    "Geschosshoehe 3,0 m, Aussenwand 0,36 m verputzt (Text nennt kein Fassadenmaterial).",
+    "Dachterrasse ueber Attika 1,0 m als Absturzsicherung plus Dachaufgang 3 x 3 m in der Nordostecke.",
+    "Holzhaustuer als Material 'walnut' (naechstliegender Stil der Bibliothek)."
+  ],
+  "levels": [
+    {"name": "EG", "elevation": 0.0},
+    {"name": "OG", "elevation": 3.0},
+    {"name": "Dach", "elevation": 6.0}
+  ],
+  "storey_height": 3.0,
+  "slab_thickness": 0.28,
+  "defaults": {"wall_thickness": 0.36, "parapet_height": 1.0,
+               "window": {"frame_width": 0.07, "frame_depth": 0.09, "reveal_depth": 0.14}},
+  "volumes": [
+    {"id": "H", "name": "Haupthaus", "origin": [0.0, 0.0], "size": [10.0, 12.0], "base_z": 0.0, "storeys": 2, "facade": "plaster_white"},
+    {"id": "D", "name": "Dachaufgang", "origin": [7.0, 9.0], "size": [3.0, 3.0], "base_z": 6.0, "storeys": 1, "storey_height": 2.6, "wall_thickness": 0.25, "parapet_height": 0.3, "facade": "plaster_white"}
+  ],
+  "openings": [
+    {"volume": "H", "side": "S", "storey": 0, "offset": 1.0, "width": 8.0, "height": 2.6, "sill": 0.0, "kind": "window", "mullion_spacing": 2.0, "note": "Glasfront Garten"},
+    {"volume": "H", "side": "S", "storey": 1, "offset": 1.5, "width": 7.0, "height": 2.4, "sill": 0.0, "kind": "window", "mullion_spacing": 1.75, "note": "Fenstertueren Balkon"},
+    {"volume": "H", "side": "N", "storey": 0, "offset": 4.4, "width": 1.2, "height": 2.3, "sill": 0.0, "kind": "door", "panel": "walnut", "note": "Haustuer"},
+    {"volume": "H", "side": "N", "storey": 0, "offset": 1.0, "width": 1.2, "height": 1.4, "sill": 0.9, "kind": "window"},
+    {"volume": "H", "side": "N", "storey": 0, "offset": 7.8, "width": 1.2, "height": 1.4, "sill": 0.9, "kind": "window"},
+    {"volume": "H", "side": "N", "storey": 1, "offset": 1.2, "width": 1.2, "height": 1.4, "sill": 0.9, "kind": "window"},
+    {"volume": "H", "side": "N", "storey": 1, "offset": 4.4, "width": 1.2, "height": 1.4, "sill": 0.9, "kind": "window"},
+    {"volume": "H", "side": "N", "storey": 1, "offset": 7.6, "width": 1.2, "height": 1.4, "sill": 0.9, "kind": "window"},
+    {"volume": "H", "side": "E", "storey": 0, "offset": 2.0, "width": 3.0, "height": 1.4, "sill": 0.9, "kind": "window", "mullion_spacing": 1.5},
+    {"volume": "H", "side": "E", "storey": 1, "offset": 7.0, "width": 3.0, "height": 1.4, "sill": 0.9, "kind": "window", "mullion_spacing": 1.5},
+    {"volume": "H", "side": "W", "storey": 0, "offset": 5.0, "width": 0.8, "height": 2.4, "sill": 0.2, "kind": "window"},
+    {"volume": "H", "side": "W", "storey": 1, "offset": 5.0, "width": 0.8, "height": 2.4, "sill": 0.2, "kind": "window"},
+    {"volume": "D", "side": "S", "storey": 0, "offset": 0.9, "width": 1.1, "height": 2.2, "sill": 0.0, "kind": "door", "panel": "glass_clear", "note": "Tuer Dachterrasse"}
+  ],
+  "balconies": [
+    {"volume": "H", "side": "S", "level": 3.0, "offset": 0.0, "width": 10.0, "depth": 1.8, "thickness": 0.2,
+     "railing": {"height": 1.0, "post_spacing": 1.25, "handrail_d": 0.05, "rail_d": 0.016, "rails_at": [0.12, 0.24, 0.36, 0.48, 0.6, 0.72, 0.84], "material": "steel_black", "sides": ["front", "left", "right"]}}
+  ],
+  "partitions": [
+    {"name": "Innenwand EG", "start": [0.36, 6.5], "end": [6.0, 6.5], "z": 0.0},
+    {"name": "Innenwand OG", "start": [5.0, 0.36], "end": [5.0, 6.0], "z": 3.0}
+  ],
+  "furniture": [
+    {"name": "Sofa", "origin": [3.0, 2.2, 0.0], "size": [2.6, 0.95, 0.42], "material": "fabric_grey"},
+    {"name": "Esstisch", "origin": [6.5, 2.0, 0.0], "size": [1.8, 0.9, 0.75], "material": "walnut"},
+    {"name": "Regal", "origin": [1.0, 6.1, 0.0], "size": [3.0, 0.35, 2.1], "material": "walnut"},
+    {"name": "Bett", "origin": [1.5, 1.0, 3.0], "size": [1.8, 2.1, 0.45], "material": "fabric_sand"},
+    {"name": "Terrassentisch", "origin": [4.0, -3.0, 0.05], "size": [1.6, 0.8, 0.74], "material": "walnut"}
+  ],
+  "site": {
+    "ground_extent": [-60, -60, 70, 70],
+    "paving": [{"name": "Terrasse", "origin": [1.0, -4.0], "size": [8.0, 4.0], "tile": [0.8, 0.8], "joint": 0.008, "thickness": 0.05, "material": "paving_concrete"}],
+    "paths": [{"name": "Kiesweg", "origin": [4.4, -12.0], "size": [1.2, 8.0], "material": "gravel"}],
+    "hedges": [{"name": "Buchs West", "origin": [-3.5, -12.0], "size": [0.6, 10.0], "height": 0.9},
+               {"name": "Buchs Ost", "origin": [12.9, -12.0], "size": [0.6, 10.0], "height": 0.9}],
+    "trees": [{"name": "Felsenbirne", "position": [-6.0, -6.0], "height": 6.0, "crown_radius": 2.4},
+              {"name": "Ahorn", "position": [15.0, -2.0], "height": 9.0, "crown_radius": 3.5}]
+  },
+  "render": {
+    "sun": {"azimuth_deg": 205.0, "elevation_deg": 38.0},
+    "grass_region": [-12.0, -24.0, 22.0, -0.5],
+    "cameras": [{"name": "hero", "position": [-7.0, -16.0, 1.65], "target": [5.0, 4.0, 3.2], "lens_mm": 24}],
+    "context": {
+      "trees": [{"position": [-20, 25], "height": 12, "crown_radius": 5}, {"position": [25, 30], "height": 13, "crown_radius": 5.5},
+                {"position": [-28, -5], "height": 11, "crown_radius": 4.5}, {"position": [32, 5], "height": 12, "crown_radius": 5}],
+      "buildings": [{"origin": [-20, 2], "size": [9, 11], "height": 6.6, "material": "plaster_white"},
+                    {"origin": [20, 1], "size": [10, 12], "height": 7.0, "material": "plaster_white"}],
+      "hedge_boundary": {"rect": [-10, -26, 20, 16], "height": 1.4}
+    }
+  }
+}

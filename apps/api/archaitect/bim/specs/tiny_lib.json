@@ -1,0 +1,268 @@
+{
+ "spec_version": 1,
+ "name": "Tiny House",
+ "description": "Tiny House 4 mal 8 Meter, Pultdach, Holzterrasse, Solarpaneele auf dem Dach",
+ "building_type": "bungalow_flach",
+ "assumptions": [
+  "Grundriss 4 m breit in x (Ost-West) x 8 m tief in y (Nord-Sued) angenommen, Suedfassade bei y=0, Terrasse/Garten bei y<0.",
+  "Geschosshoehe 2.8 m und Wandstaerke 0.2 m angenommen.",
+  "Pultdach 12 Grad fallend nach Sueden (hohe Nordkante, niedrige Suedkante) angenommen fuer suedausgerichtete Solarmodule.",
+  "Holzterrasse 4.0x3.0 m suedlich vor dem Haus angenommen.",
+  "Fassade Holz Laerche, Dach Stehfalz Zink mangels Angabe angenommen.",
+  "Solaranlage 2x3 Module buendig auf der Sued-Dachseite angenommen.",
+  "Solaranlage auf Tiny House entfällt: Schrägdach-PV ist nur auf Satteldächern darstellbar."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "Dach",
+   "elevation": 2.8
+  }
+ ],
+ "storey_height": 2.8,
+ "slab_thickness": 0.2,
+ "defaults": {
+  "wall_thickness": 0.2,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "steel_black",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Tiny House",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    4.0,
+    8.0
+   ],
+   "base_z": 0.0,
+   "storeys": 1,
+   "storey_height": 2.8,
+   "wall_thickness": 0.2,
+   "facade": "wood_larch",
+   "roof": {
+    "type": "shed",
+    "fall_to": "S",
+    "pitch_deg": 12,
+    "overhang": 0.3,
+    "material": "roof_zinc_standing"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 0.4,
+   "width": 1.0,
+   "height": 2.1,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "note": "Terrassentuer zur Holzterrasse"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 2.0,
+   "width": 1.4,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 0.8,
+   "width": 1.4,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 3.1,
+   "width": 1.4,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 5.4,
+   "width": 1.4,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.2,
+   "height": 1.0,
+   "sill": 1.0,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 3.0,
+   "width": 1.5,
+   "height": 1.2,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 5.5,
+   "width": 1.0,
+   "height": 0.8,
+   "sill": 1.5,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 1,
+   "note": "Badfenster"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.2,
+   "width": 1.6,
+   "height": 1.0,
+   "sill": 1.0,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2
+  }
+ ],
+ "components": [
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "S",
+   "u": 2.0,
+   "width": 4.0,
+   "depth": 3.0,
+   "z": 0.05,
+   "thickness": 0.12,
+   "material": "terrace_decking",
+   "railing": "none"
+  }
+ ],
+ "limitations": [
+  "Innenausbau und Elektroinstallation der PV-Anlage nicht abgebildet."
+ ],
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     8.54,
+     -4.37,
+     1.65
+    ],
+    "target": [
+     2.0,
+     4.0,
+     1.68
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -4.54,
+     -4.37,
+     1.65
+    ],
+    "target": [
+     2.0,
+     4.0,
+     1.68
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     2.0,
+     -5.8,
+     1.65
+    ],
+    "target": [
+     2.0,
+     4.0,
+     1.68
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "street_n",
+    "position": [
+     2.0,
+     13.8,
+     1.65
+    ],
+    "target": [
+     2.0,
+     4.0,
+     1.68
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     9.3,
+     -5.34,
+     5.65
+    ],
+    "target": [
+     2.0,
+     4.0,
+     2.88
+    ],
+    "lens_mm": 32
+   }
+  ]
+ },
+ "site": {}
+}

@@ -1,0 +1,11 @@
+/* project navigation (Projekte › name › 1 Grundstück & Daten › 2 Hausplanung) */
+.psteps { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 6px; font-size: 12px; }
+.psteps a, .psteps .pname { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: var(--r-pill); color: var(--text-2); text-decoration: none; border: 1px solid transparent; }
+.psteps a:hover { background: var(--surface-3); color: var(--text); }
+.psteps a.on { border-color: var(--blue-ui); color: var(--blue-ui); background: rgba(71, 165, 250, .12); }
+.psteps b { display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 50%; background: var(--surface-3); font-size: 10px; font-weight: 600; color: var(--text); }
+.psteps a.on b { background: var(--blue-ui); color: #0b0b0c; }
+.psteps .pname { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); }
+.psteps .sep { color: var(--text-3); }
+.psteps-home { border-color: var(--line-strong) !important; }
+

@@ -1,0 +1,498 @@
+{
+ "spec_version": 1,
+ "name": "Scheunenhaus",
+ "description": "Umgebaute Scheune zum Wohnen: hohes Satteldach, große Glasfront am Giebel, Holzverschalung",
+ "building_type": "bauernhaus_scheune",
+ "assumptions": [
+  "Grundflaeche 10 x 14 m angenommen, First in Nord-Sued-Richtung, Sued-Giebel zum Garten bei y<0.",
+  "2 Vollgeschosse mit Geschosshoehe 3,0 m, Traufe bei 6,0 m angenommen.",
+  "Dachneigung 48 Grad als hohes Satteldach angenommen, Ueberstand 0,6 m.",
+  "Holzverschalung als Laerche wood_larch angenommen.",
+  "Dachdeckung als Stehfalz Zink roof_zinc_standing fuer moderne Scheunenumwandlung angenommen.",
+  "Glasfront Sueden als Festverglasung ueber EG, OG und Giebeldreieck angenommen, Eingang Nord zur Strasse.",
+  "Terrasse Sued 8 x 3 m aus Holz angenommen.",
+  "Giebelverglasung Sued auf 5,0 x 1,8 m verkleinert damit sie ins Giebeldreieck passt."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG1",
+   "elevation": 3.0
+  },
+  {
+   "name": "Dach",
+   "elevation": 6.0
+  }
+ ],
+ "storey_height": 3.0,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.32,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "alu_anthracite",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Scheune",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    10.0,
+    14.0
+   ],
+   "base_z": 0.3,
+   "storeys": 2,
+   "storey_height": 3.0,
+   "wall_thickness": 0.32,
+   "facade": "wood_larch",
+   "roof": {
+    "type": "gable",
+    "ridge": "y",
+    "pitch_deg": 48,
+    "overhang": 0.6,
+    "material": "roof_zinc_standing"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 8.0,
+   "height": 2.5,
+   "sill": 0.2,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "mullion_spacing": 2.0,
+   "note": "Glasfront EG Sued zum Garten"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.0,
+   "width": 8.0,
+   "height": 2.5,
+   "sill": 0.2,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "mullion_spacing": 2.0,
+   "note": "Glasfront OG Sued"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 2.5,
+   "width": 5.0,
+   "height": 1.8,
+   "sill": 0.3,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "mullion_spacing": 1.25,
+   "note": "Giebelverglasung Sued verkleinert"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.4,
+   "width": 1.2,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "glazed",
+   "frame": "alu_anthracite",
+   "handle": "steel_black",
+   "note": "Haustuer Nord"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.8,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 7.2,
+   "width": 1.8,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.0,
+   "width": 1.8,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 4.1,
+   "width": 1.8,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 7.2,
+   "width": 1.8,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 4.0,
+   "width": 2.0,
+   "height": 1.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "alu_anthracite",
+   "note": "Giebelfenster Nord"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 1.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 5.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 9.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 1.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 5.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 9.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 5.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 9.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 1.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 5.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 9.5,
+   "width": 2.0,
+   "height": 1.6,
+   "sill": 0.8,
+   "kind": "window",
+   "window_type": "casement",
+   "sashes": 2,
+   "frame": "alu_anthracite"
+  }
+ ],
+ "components": [
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "S",
+   "u": 5.0,
+   "width": 8.0,
+   "depth": 3.0,
+   "z": 0.1,
+   "thickness": 0.15,
+   "material": "terrace_decking",
+   "railing": "none"
+  },
+  {
+   "type": "steps",
+   "volume": "A",
+   "side": "N",
+   "u": 5.0,
+   "width": 1.6,
+   "count": 2,
+   "rise": 0.15,
+   "tread": 0.32,
+   "material": "stone_granite_grey"
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 8.0,
+   "y": 11.0,
+   "width": 0.6,
+   "depth": 0.6,
+   "height": 1.2,
+   "material": "brick_red",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "all",
+   "material": "zinc"
+  },
+  {
+   "type": "downpipe",
+   "volume": "A",
+   "side": "E",
+   "u": 0.5,
+   "material": "zinc"
+  },
+  {
+   "type": "downpipe",
+   "volume": "A",
+   "side": "W",
+   "u": 0.5,
+   "material": "zinc"
+  }
+ ],
+ "limitations": [
+  "Offener Luftraum mit Galerie im Inneren der Scheune nicht abgebildet.",
+  "Historische Scheunentore und Beschlaege nicht abgebildet, nur moderne Verglasung.",
+  "Vertikale Leistenschalung nur als Material, nicht als einzelne Leisten modelliert."
+ ],
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     18.5,
+     -10.28,
+     1.65
+    ],
+    "target": [
+     5.0,
+     7.0,
+     3.91
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -8.5,
+     -10.28,
+     1.65
+    ],
+    "target": [
+     5.0,
+     7.0,
+     3.91
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     5.0,
+     -16.14,
+     1.65
+    ],
+    "target": [
+     5.0,
+     7.0,
+     3.91
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "street_n",
+    "position": [
+     5.0,
+     30.14,
+     1.65
+    ],
+    "target": [
+     5.0,
+     7.0,
+     3.91
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     19.99,
+     -12.18,
+     10.02
+    ],
+    "target": [
+     5.0,
+     7.0,
+     6.42
+    ],
+    "lens_mm": 32
+   }
+  ]
+ },
+ "site": {}
+}

@@ -1,0 +1,37 @@
+{
+ "_meta": {
+  "note": "kaserne = tags of OSM way 4893236 observed live via Overpass on 2026-10-28. All other entries are HAND-WRITTEN test fixtures that follow the OSM tag schema; they are NOT recordings (Overpass was rate-limited during capture)."
+ },
+ "kaserne": [
+  {
+   "addr:city": "Frankfurt am Main",
+   "barrier": "fence",
+   "landuse": "military",
+   "military": "barracks",
+   "name": "Kaserne Frankfurt-Hausen"
+  }
+ ],
+ "frankfurt_nordend": [
+  {
+   "landuse": "residential"
+  },
+  {
+   "building": "apartments"
+  }
+ ],
+ "darmstadt_wohn": [
+  {
+   "landuse": "residential"
+  }
+ ],
+ "acker_wetterau": [
+  {
+   "landuse": "farmland"
+  }
+ ],
+ "wald_odenwald": [
+  {
+   "landuse": "forest"
+  }
+ ]
+}

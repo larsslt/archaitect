@@ -1,0 +1,1639 @@
+{
+ "spec_version": 1,
+ "name": "Barockschloss",
+ "description": "Barockes Schloss mit Mittelbau, Säulenportikus, zwei Seitenflügeln mit Rundtürmen, Mansarddach, Eckquaderung und Gesimsen",
+ "building_type": "burg_schloss",
+ "assumptions": [
+  "Corps de Logis 20 x 11 m dreigeschossig, Flügel je 7 x 9 m zweigeschossig angenommen.",
+  "Rundtürme mit Kegelhelm an den Flügelecken (Gartenseite Norden), Portikus mit vier Säulen im Süden.",
+  "Schiefer-Mansarddach, gelber Putz, Natursteingliederung."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG1",
+   "elevation": 3.9
+  },
+  {
+   "name": "OG2",
+   "elevation": 7.8
+  },
+  {
+   "name": "Dach",
+   "elevation": 11.7
+  }
+ ],
+ "storey_height": 3.9,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Corps de Logis",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    20.0,
+    11.0
+   ],
+   "base_z": 0.5,
+   "storeys": 3,
+   "storey_height": 3.9,
+   "wall_thickness": 0.6,
+   "facade": "plaster_yellow",
+   "roof": {
+    "type": "mansard",
+    "ridge": "x",
+    "pitch_deg": 28,
+    "lower_pitch_deg": 68,
+    "lower_height": 2.8,
+    "overhang": 0.5,
+    "material": "roof_slate"
+   },
+   "facade_detail": {
+    "plinth": {
+     "height": 0.9,
+     "material": "stone_granite_grey"
+    }
+   }
+  },
+  {
+   "id": "B",
+   "name": "Westflügel",
+   "origin": [
+    -7.0,
+    0.0
+   ],
+   "size": [
+    7.0,
+    9.0
+   ],
+   "base_z": 0.5,
+   "storeys": 2,
+   "storey_height": 3.9,
+   "wall_thickness": 0.55,
+   "facade": "plaster_yellow",
+   "roof": {
+    "type": "hip",
+    "pitch_deg": 30,
+    "overhang": 0.5,
+    "material": "roof_slate"
+   }
+  },
+  {
+   "id": "C",
+   "name": "Ostflügel",
+   "origin": [
+    20.0,
+    0.0
+   ],
+   "size": [
+    7.0,
+    9.0
+   ],
+   "base_z": 0.5,
+   "storeys": 2,
+   "storey_height": 3.9,
+   "wall_thickness": 0.55,
+   "facade": "plaster_yellow",
+   "roof": {
+    "type": "hip",
+    "pitch_deg": 30,
+    "overhang": 0.5,
+    "material": "roof_slate"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 9.0,
+   "width": 2.0,
+   "height": 3.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   },
+   "frame": "paint_white",
+   "top": "segment_arch"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.36,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.03,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 6.69,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 12.01,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 14.68,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 17.34,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "segment_arch",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.36,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   },
+   "shutters": {
+    "material": "paint_green_sage",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 4.03,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   },
+   "shutters": {
+    "material": "paint_green_sage",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 6.69,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   },
+   "shutters": {
+    "material": "paint_green_sage",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 9.35,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   },
+   "shutters": {
+    "material": "paint_green_sage",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 12.01,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   },
+   "shutters": {
+    "material": "paint_green_sage",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 14.68,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   },
+   "shutters": {
+    "material": "paint_green_sage",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 17.34,
+   "width": 1.3,
+   "height": 2.6,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   },
+   "shutters": {
+    "material": "paint_green_sage",
+    "state": "open",
+    "style": "louvre"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 1.45,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 4.1,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 6.75,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 9.4,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 12.05,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 14.7,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 2,
+   "offset": 17.35,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.36,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.03,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 6.69,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 9.35,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 12.01,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 14.68,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 17.34,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.36,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 4.03,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 6.69,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 9.35,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 12.01,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 14.68,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 17.34,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 1.45,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 4.1,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 6.75,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 9.4,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 12.05,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 14.7,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 2,
+   "offset": 17.35,
+   "width": 1.2,
+   "height": 1.9,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 9.2,
+   "width": 1.6,
+   "height": 2.7,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "glazed",
+   "frame": "paint_white"
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 1,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "N",
+   "storey": 1,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "S",
+   "storey": 1,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "segment_pediment"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.47,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "N",
+   "storey": 1,
+   "offset": 4.23,
+   "width": 1.3,
+   "height": 2.5,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.35,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 0,
+   "offset": 3.9,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 0,
+   "offset": 6.45,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 1,
+   "offset": 1.35,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 1,
+   "offset": 3.9,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 1,
+   "offset": 6.45,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 0,
+   "offset": 1.35,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 0,
+   "offset": 3.9,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 0,
+   "offset": 6.45,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 1,
+   "offset": 1.35,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 1,
+   "offset": 3.9,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  },
+  {
+   "volume": "C",
+   "side": "E",
+   "storey": 1,
+   "offset": 6.45,
+   "width": 1.2,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.18,
+    "depth": 0.06,
+    "lintel": "keystone"
+   }
+  }
+ ],
+ "components": [
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "S",
+   "u": 10.0,
+   "width": 9.0,
+   "depth": 2.6,
+   "z": 0.0,
+   "thickness": 0.5,
+   "material": "stone_granite_grey",
+   "railing": "none"
+  },
+  {
+   "type": "column",
+   "volume": "A",
+   "side": "S",
+   "u": 10.0,
+   "count": 4,
+   "spacing": 2.5,
+   "distance": 1.9,
+   "radius": 0.34,
+   "z0": 0.5,
+   "z1": 7.7,
+   "order": "doric",
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "entablature",
+   "volume": "A",
+   "side": "S",
+   "u": 10.0,
+   "span": 9.6,
+   "z": 7.7,
+   "height": 1.0,
+   "distance": 1.9,
+   "beam_depth": 1.2,
+   "triglyphs": true,
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "cornice",
+   "volume": "A",
+   "side": "all",
+   "z": 11.5,
+   "height": 0.5,
+   "projection": 0.45,
+   "profile": "stepped",
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "cornice",
+   "volume": "B",
+   "side": "all",
+   "z": 7.5,
+   "height": 0.4,
+   "projection": 0.35,
+   "profile": "stepped",
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "cornice",
+   "volume": "C",
+   "side": "all",
+   "z": 7.5,
+   "height": 0.4,
+   "projection": 0.35,
+   "profile": "stepped",
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "quoins",
+   "volume": "A",
+   "width": 0.7,
+   "course": 0.4,
+   "z0": 0.5,
+   "z1": 11.6,
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "quoins",
+   "volume": "B",
+   "width": 0.6,
+   "course": 0.4,
+   "z0": 0.5,
+   "z1": 7.6,
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "quoins",
+   "volume": "C",
+   "width": 0.6,
+   "course": 0.4,
+   "z0": 0.5,
+   "z1": 7.6,
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "rustication",
+   "volume": "A",
+   "side": "N",
+   "z0": 0.0,
+   "z1": 3.9,
+   "course": 0.55,
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "tower",
+   "volume": "B",
+   "x": 0.2,
+   "y": 8.8,
+   "radius": 2.1,
+   "z0": 0.0,
+   "z1": 9.2,
+   "roof": "cone",
+   "roof_height": 5.0,
+   "roof_overhang": 0.35,
+   "material": "plaster_yellow",
+   "roof_material": "roof_slate",
+   "band": true,
+   "band_material": "stone_ashlar_light",
+   "finial": true,
+   "slits": 3,
+   "slit_angle": 250,
+   "slit_z": 5.0
+  },
+  {
+   "type": "tower",
+   "volume": "C",
+   "x": 6.8,
+   "y": 8.8,
+   "radius": 2.1,
+   "z0": 0.0,
+   "z1": 9.2,
+   "roof": "cone",
+   "roof_height": 5.0,
+   "roof_overhang": 0.35,
+   "material": "plaster_yellow",
+   "roof_material": "roof_slate",
+   "band": true,
+   "band_material": "stone_ashlar_light",
+   "finial": true,
+   "slits": 3,
+   "slit_angle": 290,
+   "slit_z": 5.0
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 4.0,
+   "y": 5.5,
+   "width": 0.9,
+   "depth": 0.9,
+   "height": 1.5,
+   "material": "brick_red",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "chimney",
+   "volume": "A",
+   "x": 16.0,
+   "y": 5.5,
+   "width": 0.9,
+   "depth": 0.9,
+   "height": 1.5,
+   "material": "brick_red",
+   "cap_material": "concrete_light"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "all",
+   "material": "copper"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     10.0,
+     -2.6
+    ],
+    [
+     10.0,
+     -14.0
+    ]
+   ],
+   "width": 3.0,
+   "material": "paving_granite"
+  },
+  {
+   "type": "lamp",
+   "volume": "A",
+   "side": "N",
+   "u": 8.0,
+   "z": 3.0,
+   "size": 0.3,
+   "material": "cast_iron_black"
+  },
+  {
+   "type": "lamp",
+   "volume": "A",
+   "side": "N",
+   "u": 12.0,
+   "z": 3.0,
+   "size": 0.3,
+   "material": "cast_iron_black"
+  }
+ ],
+ "site": {},
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     44,
+     -28.5,
+     1.65
+    ],
+    "target": [
+     10,
+     5.5,
+     7.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -24,
+     -28.5,
+     1.65
+    ],
+    "target": [
+     10,
+     5.5,
+     7.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     10,
+     -38.7,
+     1.65
+    ],
+    "target": [
+     10,
+     5.5,
+     7.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     47.4,
+     -31.9,
+     14
+    ],
+    "target": [
+     10,
+     5.5,
+     7.0
+    ],
+    "lens_mm": 28
+   }
+  ]
+ }
+}

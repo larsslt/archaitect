@@ -1,0 +1,1395 @@
+{
+ "spec_version": 1,
+ "name": "Moderne Typen Abnahme",
+ "description": "Fuenf moderne Gebaeudetypen mit Stufe-3-Bauteilen.",
+ "assumptions": [
+  "Reine Abnahmespec, keine reale Vorlage."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG1",
+   "elevation": 3.5
+  },
+  {
+   "name": "OG2",
+   "elevation": 7.0
+  },
+  {
+   "name": "OG3",
+   "elevation": 10.5
+  }
+ ],
+ "storey_height": 3.0,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.3,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.14,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "J",
+   "name": "Buerohaus",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    36.0,
+    14.0
+   ],
+   "base_z": 0.0,
+   "storeys": 4,
+   "wall_thickness": 0.35,
+   "facade": "plaster_grey_light",
+   "storey_height": 3.6,
+   "roof": {
+    "type": "flat"
+   }
+  },
+  {
+   "id": "K",
+   "name": "Wohnblock",
+   "origin": [
+    45.0,
+    0.0
+   ],
+   "size": [
+    30.0,
+    12.0
+   ],
+   "base_z": 0.0,
+   "storeys": 5,
+   "wall_thickness": 0.35,
+   "facade": "plaster_white",
+   "storey_height": 2.9,
+   "roof": {
+    "type": "flat"
+   }
+  },
+  {
+   "id": "L",
+   "name": "Halle",
+   "origin": [
+    84.0,
+    0.0
+   ],
+   "size": [
+    40.0,
+    20.0
+   ],
+   "base_z": 0.0,
+   "storeys": 1,
+   "wall_thickness": 0.3,
+   "facade": "metal_corrugated",
+   "storey_height": 7.0,
+   "roof": {
+    "type": "sawtooth",
+    "teeth": 4,
+    "pitch_deg": 14,
+    "material": "roof_zinc_standing"
+   }
+  },
+  {
+   "id": "M",
+   "name": "Schulpavillon",
+   "origin": [
+    133.0,
+    0.0
+   ],
+   "size": [
+    24.0,
+    11.0
+   ],
+   "base_z": 0.0,
+   "storeys": 2,
+   "wall_thickness": 0.35,
+   "facade": "fibre_cement_anthracite",
+   "storey_height": 3.5,
+   "roof": {
+    "type": "flat"
+   }
+  },
+  {
+   "id": "N",
+   "name": "Solarhaus",
+   "origin": [
+    166.0,
+    0.0
+   ],
+   "size": [
+    11.0,
+    9.0
+   ],
+   "base_z": 0.0,
+   "storeys": 2,
+   "wall_thickness": 0.36,
+   "facade": "plaster_white",
+   "storey_height": 2.8,
+   "roof": {
+    "type": "gable",
+    "ridge": "x",
+    "pitch_deg": 30,
+    "overhang": 0.5,
+    "material": "roof_tile_anthracite"
+   }
+  },
+  {
+   "id": "P",
+   "name": "Supermarkt",
+   "origin": [
+    195.0,
+    0.0
+   ],
+   "size": [
+    36.0,
+    24.0
+   ],
+   "base_z": 0.0,
+   "storeys": 1,
+   "wall_thickness": 0.3,
+   "facade": "plaster_grey_light",
+   "storey_height": 5.5,
+   "roof": {
+    "type": "flat"
+   }
+  },
+  {
+   "id": "Q",
+   "name": "Kapelle",
+   "origin": [
+    245.0,
+    0.0
+   ],
+   "size": [
+    20.0,
+    10.0
+   ],
+   "base_z": 0.0,
+   "storeys": 1,
+   "wall_thickness": 0.6,
+   "facade": "stone_limestone",
+   "storey_height": 7.0,
+   "roof": {
+    "type": "gable",
+    "ridge": "x",
+    "pitch_deg": 48,
+    "overhang": 0.4,
+    "material": "roof_slate"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "J",
+   "side": "S",
+   "storey": 0,
+   "offset": 0.6,
+   "width": 1.25,
+   "height": 2.5,
+   "sill": 0.8,
+   "kind": "window",
+   "storeys": [
+    1,
+    2,
+    3
+   ],
+   "repeat": {
+    "count": 25,
+    "pitch": 1.4
+   },
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "glass": "glass_curtain_blue"
+  },
+  {
+   "volume": "J",
+   "side": "S",
+   "storey": 0,
+   "offset": 0.6,
+   "width": 1.25,
+   "height": 2.5,
+   "sill": 0.8,
+   "kind": "window",
+   "repeat": {
+    "count": 11,
+    "pitch": 1.4
+   },
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "glass": "glass_curtain_blue"
+  },
+  {
+   "volume": "J",
+   "side": "S",
+   "storey": 0,
+   "offset": 21.0,
+   "width": 1.25,
+   "height": 2.5,
+   "sill": 0.8,
+   "kind": "window",
+   "repeat": {
+    "count": 10,
+    "pitch": 1.4
+   },
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "glass": "glass_curtain_blue"
+  },
+  {
+   "volume": "J",
+   "side": "S",
+   "storey": 0,
+   "offset": 16.9,
+   "width": 2.6,
+   "height": 2.8,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "panel": "alu_anthracite",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "J",
+   "side": "E",
+   "storey": 0,
+   "offset": 3.0,
+   "width": 1.25,
+   "height": 2.5,
+   "sill": 0.8,
+   "kind": "window",
+   "storeys": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "repeat": {
+    "count": 3,
+    "pitch": 4.0
+   },
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "glass": "glass_curtain_blue"
+  },
+  {
+   "volume": "J",
+   "side": "N",
+   "storey": 0,
+   "offset": 0.6,
+   "width": 1.25,
+   "height": 2.5,
+   "sill": 0.8,
+   "kind": "window",
+   "storeys": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "repeat": {
+    "count": 25,
+    "pitch": 1.4
+   },
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "glass": "glass_curtain_blue"
+  },
+  {
+   "volume": "K",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.5,
+   "width": 1.4,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "storeys": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "repeat": {
+    "count": 5,
+    "pitch": 5.5
+   },
+   "frame": "paint_white",
+   "sashes": 2
+  },
+  {
+   "volume": "K",
+   "side": "S",
+   "storey": 0,
+   "offset": 14.3,
+   "width": 1.6,
+   "height": 2.4,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "panel": "alu_anthracite",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.5,
+   "width": 1.2,
+   "height": 1.2,
+   "sill": 1.0,
+   "kind": "window",
+   "storeys": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "repeat": {
+    "count": 7,
+    "pitch": 4.0
+   },
+   "frame": "paint_white",
+   "sashes": 2
+  },
+  {
+   "volume": "K",
+   "side": "E",
+   "storey": 0,
+   "offset": 5.0,
+   "width": 1.0,
+   "height": 1.4,
+   "sill": 1.0,
+   "kind": "window",
+   "storeys": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "frame": "paint_white",
+   "sashes": 2
+  },
+  {
+   "volume": "L",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.0,
+   "width": 4.0,
+   "height": 4.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "sectional",
+   "panel": "paint_white",
+   "frame": "paint_white",
+   "repeat": {
+    "count": 3,
+    "pitch": 7.0
+   }
+  },
+  {
+   "volume": "L",
+   "side": "E",
+   "storey": 0,
+   "offset": 3.0,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "panel",
+   "panel": "paint_black",
+   "frame": "paint_black"
+  },
+  {
+   "volume": "L",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.5,
+   "height": 0.9,
+   "sill": 5.0,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite",
+   "repeat": {
+    "count": 8,
+    "pitch": 5.0
+   }
+  },
+  {
+   "volume": "M",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.4,
+   "height": 2.2,
+   "sill": 0.8,
+   "kind": "window",
+   "storeys": [
+    0,
+    1
+   ],
+   "repeat": {
+    "count": 8,
+    "pitch": 2.9
+   },
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "M",
+   "side": "S",
+   "storey": 0,
+   "offset": 11.2,
+   "width": 1.3,
+   "height": 2.4,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "panel": "alu_anthracite",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "M",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.4,
+   "height": 2.2,
+   "sill": 0.8,
+   "kind": "window",
+   "storeys": [
+    0,
+    1
+   ],
+   "repeat": {
+    "count": 8,
+    "pitch": 2.9
+   },
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "N",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.2,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "frame": "paint_white",
+   "sashes": 2,
+   "storeys": [
+    0,
+    1
+   ]
+  },
+  {
+   "volume": "N",
+   "side": "S",
+   "storey": 0,
+   "offset": 3.4,
+   "width": 2.4,
+   "height": 2.3,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "french",
+   "panel": "paint_white",
+   "frame": "paint_white"
+  },
+  {
+   "volume": "N",
+   "side": "S",
+   "storey": 0,
+   "offset": 7.0,
+   "width": 1.2,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "frame": "paint_white",
+   "sashes": 2,
+   "storeys": [
+    0,
+    1
+   ]
+  },
+  {
+   "volume": "N",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.5,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "panel",
+   "panel": "paint_green_dark",
+   "frame": "paint_white"
+  },
+  {
+   "volume": "N",
+   "side": "E",
+   "storey": 0,
+   "offset": 3.0,
+   "width": 1.0,
+   "height": 1.3,
+   "sill": 0.9,
+   "kind": "window",
+   "frame": "paint_white",
+   "storeys": [
+    0,
+    1
+   ]
+  },
+  {
+   "volume": "P",
+   "side": "S",
+   "storey": 0,
+   "offset": 14.0,
+   "width": 4.0,
+   "height": 3.0,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "panel": "alu_anthracite",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "P",
+   "side": "S",
+   "storey": 0,
+   "offset": 2.0,
+   "width": 9.0,
+   "height": 3.0,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "P",
+   "side": "S",
+   "storey": 0,
+   "offset": 21.0,
+   "width": 9.0,
+   "height": 3.0,
+   "sill": 0.4,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "alu_anthracite"
+  },
+  {
+   "volume": "Q",
+   "side": "S",
+   "storey": 0,
+   "offset": 2.0,
+   "width": 1.2,
+   "height": 4.2,
+   "sill": 1.5,
+   "kind": "window",
+   "top": "pointed_arch",
+   "bars": {
+    "cols": 2,
+    "rows": 3
+   },
+   "frame": "paint_white",
+   "repeat": {
+    "count": 4,
+    "pitch": 4.5
+   }
+  },
+  {
+   "volume": "Q",
+   "side": "S",
+   "storey": 0,
+   "offset": 9.4,
+   "width": 1.6,
+   "height": 3.2,
+   "sill": 0.0,
+   "kind": "door",
+   "top": "pointed_arch",
+   "door_type": "double",
+   "panel": "timber_dark",
+   "frame": "timber_dark"
+  }
+ ],
+ "components": [
+  {
+   "type": "canopy",
+   "volume": "P",
+   "side": "S",
+   "u": 16.0,
+   "width": 9.0,
+   "projection": 3.5,
+   "z": 3.6,
+   "kind": "flat",
+   "support": "posts",
+   "material": "metal_panel_anthracite"
+  },
+  {
+   "type": "pylon",
+   "x": 192.0,
+   "y": -12.0,
+   "height": 9.0
+  },
+  {
+   "type": "parking",
+   "x": 198.0,
+   "y": -12.0,
+   "width": 30.0,
+   "depth": 5.0,
+   "spaces": 11
+  },
+  {
+   "type": "ramp",
+   "volume": "P",
+   "side": "S",
+   "u": 4.0,
+   "width": 2.0,
+   "length": 5.0,
+   "height": 0.2
+  },
+  {
+   "type": "buttress",
+   "volume": "Q",
+   "side": "S",
+   "u": 4.5,
+   "count": 4,
+   "pitch": 4.5,
+   "width": 0.8,
+   "projection": 1.0
+  },
+  {
+   "type": "steps",
+   "volume": "Q",
+   "side": "S",
+   "u": 10.2,
+   "width": 2.4,
+   "count": 3
+  },
+  {
+   "type": "chimney",
+   "volume": "Q",
+   "x": 3.0,
+   "y": 5.0,
+   "height": 1.0
+  },
+  {
+   "type": "loggia",
+   "volume": "K",
+   "side": "S",
+   "u": 24.0,
+   "width": 3.0,
+   "storey": 2,
+   "railing": "glass",
+   "ceiling": false
+  },
+  {
+   "type": "loggia",
+   "volume": "K",
+   "side": "S",
+   "u": 24.0,
+   "width": 3.0,
+   "storey": 3,
+   "railing": "solid"
+  },
+  {
+   "type": "canopy",
+   "volume": "J",
+   "side": "S",
+   "u": 18.2,
+   "width": 5.0,
+   "projection": 2.2,
+   "z": 3.1,
+   "kind": "flat",
+   "support": "posts",
+   "material": "alu_anthracite"
+  },
+  {
+   "type": "cornice",
+   "volume": "J",
+   "side": "all",
+   "profile": "simple",
+   "height": 0.3,
+   "projection": 0.12,
+   "material": "metal_panel_anthracite"
+  },
+  {
+   "type": "technical_box",
+   "volume": "J",
+   "x": 6.0,
+   "y": 4.0,
+   "width": 5.0,
+   "depth": 3.5,
+   "height": 2.4
+  },
+  {
+   "type": "technical_box",
+   "volume": "J",
+   "x": 26.0,
+   "y": 5.0,
+   "width": 2.4,
+   "depth": 2.4,
+   "height": 3.2,
+   "material": "plaster_grey_light"
+  },
+  {
+   "type": "solar",
+   "volume": "J",
+   "mode": "flat",
+   "x": 13.0,
+   "y": 2.0,
+   "cols": 8,
+   "rows": 3,
+   "tilt": 12
+  },
+  {
+   "type": "ramp",
+   "volume": "J",
+   "side": "S",
+   "u": 12.0,
+   "width": 1.6,
+   "length": 6.0,
+   "height": 0.35
+  },
+  {
+   "type": "sign",
+   "volume": "J",
+   "side": "S",
+   "u": 29.0,
+   "z": 3.4
+  },
+  {
+   "type": "steps",
+   "volume": "K",
+   "side": "S",
+   "u": 15.1,
+   "width": 2.4,
+   "count": 2
+  },
+  {
+   "type": "canopy",
+   "volume": "K",
+   "side": "S",
+   "u": 15.1,
+   "width": 3.0,
+   "projection": 1.6,
+   "z": 2.6,
+   "kind": "flat",
+   "support": "none",
+   "material": "metal_panel_anthracite"
+  },
+  {
+   "type": "cornice",
+   "volume": "K",
+   "side": "all",
+   "profile": "simple",
+   "height": 0.3,
+   "projection": 0.1,
+   "material": "plaster_white"
+  },
+  {
+   "type": "solar",
+   "volume": "K",
+   "mode": "flat",
+   "x": 2.0,
+   "y": 2.0,
+   "cols": 10,
+   "rows": 2,
+   "tilt": 12
+  },
+  {
+   "type": "technical_box",
+   "volume": "K",
+   "x": 20.0,
+   "y": 8.0,
+   "width": 3.0,
+   "depth": 2.2,
+   "height": 2.4
+  },
+  {
+   "type": "stair_ext",
+   "volume": "K",
+   "side": "E",
+   "u": 1.0,
+   "z0": 0.0,
+   "z1": 5.8,
+   "width": 1.1
+  },
+  {
+   "type": "ramp",
+   "volume": "L",
+   "side": "S",
+   "u": 10.0,
+   "width": 4.0,
+   "length": 8.0,
+   "height": 0.9,
+   "railing": "none"
+  },
+  {
+   "type": "canopy",
+   "volume": "L",
+   "side": "E",
+   "u": 3.6,
+   "width": 2.4,
+   "projection": 1.6,
+   "z": 2.6,
+   "kind": "shed",
+   "support": "brackets",
+   "material": "steel_black"
+  },
+  {
+   "type": "downpipe",
+   "volume": "L",
+   "side": "S",
+   "u": 0.2,
+   "z1": 7.0
+  },
+  {
+   "type": "downpipe",
+   "volume": "L",
+   "side": "S",
+   "u": 39.8,
+   "z1": 7.0
+  },
+  {
+   "type": "carport",
+   "volume": "L",
+   "side": "W",
+   "u": 10.0,
+   "width": 6.0,
+   "projection": 5.5,
+   "kind": "shed",
+   "material": "wood_larch"
+  },
+  {
+   "type": "terrace",
+   "volume": "M",
+   "side": "S",
+   "u": 12.0,
+   "width": 8.0,
+   "depth": 3.0,
+   "railing": "glass",
+   "railing_sides": "front,left,right"
+  },
+  {
+   "type": "canopy",
+   "volume": "M",
+   "side": "S",
+   "u": 11.85,
+   "width": 2.4,
+   "projection": 2.4,
+   "z": 3.1,
+   "kind": "flat",
+   "support": "posts",
+   "material": "steel_black"
+  },
+  {
+   "type": "carport",
+   "volume": "M",
+   "side": "E",
+   "u": 5.5,
+   "width": 5.0,
+   "projection": 5.5,
+   "kind": "flat",
+   "material": "steel_black"
+  },
+  {
+   "type": "retaining_wall",
+   "x0": 130.0,
+   "y0": -14.0,
+   "x1": 160.0,
+   "y1": -14.0,
+   "height": 0.9,
+   "thickness": 0.3
+  },
+  {
+   "type": "cornice",
+   "volume": "M",
+   "side": "all",
+   "profile": "simple",
+   "height": 0.3,
+   "projection": 0.12,
+   "material": "metal_panel_anthracite"
+  },
+  {
+   "type": "downpipe",
+   "volume": "M",
+   "side": "S",
+   "u": 0.2,
+   "z1": 7.0
+  },
+  {
+   "type": "solar",
+   "volume": "N",
+   "mode": "pitched",
+   "slope": "S",
+   "u": 1.5,
+   "up": 0.8,
+   "cols": 6,
+   "rows": 2
+  },
+  {
+   "type": "terrace",
+   "volume": "N",
+   "side": "S",
+   "u": 4.6,
+   "width": 4.4,
+   "depth": 3.2,
+   "railing": "bars",
+   "railing_height": 1.0,
+   "railing_sides": "front,left,right"
+  },
+  {
+   "type": "chimney",
+   "volume": "N",
+   "x": 8.5,
+   "y": 4.5,
+   "height": 0.8
+  },
+  {
+   "type": "gutter",
+   "volume": "N"
+  },
+  {
+   "type": "bargeboard",
+   "volume": "N"
+  },
+  {
+   "type": "downpipe",
+   "volume": "N",
+   "side": "S",
+   "u": 0.15
+  },
+  {
+   "type": "carport",
+   "volume": "N",
+   "side": "E",
+   "u": 6.2,
+   "width": 3.0,
+   "projection": 5.5,
+   "kind": "flat",
+   "material": "wood_larch"
+  },
+  {
+   "type": "retaining_wall",
+   "x0": 166.0,
+   "y0": -9.0,
+   "x1": 177.0,
+   "y1": -9.0,
+   "height": 0.8,
+   "thickness": 0.3
+  },
+  {
+   "type": "fence",
+   "points": [
+    [
+     164.0,
+     -3.0
+    ],
+    [
+     164.0,
+     -12.0
+    ],
+    [
+     180.0,
+     -12.0
+    ],
+    [
+     180.0,
+     -3.0
+    ]
+   ],
+   "kind": "picket",
+   "height": 1.0,
+   "material": "wood_larch"
+  }
+ ],
+ "balconies": [
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 2.9,
+   "offset": 3.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "glass",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 2.9,
+   "offset": 13.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "glass",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 2.9,
+   "offset": 23.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "glass",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 5.8,
+   "offset": 3.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "glass",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 5.8,
+   "offset": 13.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "glass",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 5.8,
+   "offset": 23.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "glass",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 8.7,
+   "offset": 3.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "bars",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 8.7,
+   "offset": 13.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "bars",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 8.7,
+   "offset": 23.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "bars",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 11.6,
+   "offset": 3.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "solid",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 11.6,
+   "offset": 13.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "solid",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  },
+  {
+   "volume": "K",
+   "side": "N",
+   "level": 11.6,
+   "offset": 23.0,
+   "width": 2.8,
+   "depth": 1.6,
+   "thickness": 0.2,
+   "railing": {
+    "type": "solid",
+    "height": 1.05,
+    "sides": [
+     "front",
+     "left",
+     "right"
+    ],
+    "material": "steel_black"
+   }
+  }
+ ],
+ "site": {
+  "ground_extent": [
+   -15,
+   -60,
+   275,
+   40
+  ]
+ },
+ "render": {
+  "sun": {
+   "azimuth_deg": 215.0,
+   "elevation_deg": 38.0
+  },
+  "cameras": [
+   {
+    "name": "front",
+    "position": [
+     90.0,
+     -140.0,
+     1.7
+    ],
+    "target": [
+     90.0,
+     0.0,
+     5.0
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "cam_J",
+    "position": [
+     30.6,
+     -51.6,
+     1.7
+    ],
+    "target": [
+     18.0,
+     0.0,
+     4.5
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "cam_K",
+    "position": [
+     70.5,
+     -45.0,
+     1.7
+    ],
+    "target": [
+     60.0,
+     0.0,
+     4.5
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "cam_L",
+    "position": [
+     118.0,
+     -56.0,
+     1.7
+    ],
+    "target": [
+     104.0,
+     0.0,
+     4.5
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "cam_M",
+    "position": [
+     153.4,
+     -38.400000000000006,
+     1.7
+    ],
+    "target": [
+     145.0,
+     0.0,
+     4.5
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "cam_N",
+    "position": [
+     174.85,
+     -24.1,
+     1.7
+    ],
+    "target": [
+     171.0,
+     0.0,
+     4.5
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "cam_P",
+    "position": [
+     225.6,
+     -51.6,
+     1.7
+    ],
+    "target": [
+     213.0,
+     0.0,
+     4.5
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "cam_Q",
+    "position": [
+     262.0,
+     -34.0,
+     1.7
+    ],
+    "target": [
+     255.0,
+     0.0,
+     4.5
+    ],
+    "lens_mm": 24
+   },
+   {
+    "name": "balkone_K",
+    "position": [
+     60.0,
+     30.0,
+     1.7
+    ],
+    "target": [
+     60.0,
+     12.0,
+     7.0
+    ],
+    "lens_mm": 24
+   }
+  ]
+ }
+}

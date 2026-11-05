@@ -1,0 +1,639 @@
+{
+ "spec_version": 1,
+ "name": "Palladianische Villa",
+ "description": "Palladianische Villa mit vier Säulenportiken, Kuppel auf zentralem Tambour, weißem Putz und Terrakotta-Walmdach",
+ "building_type": "villa_historisch",
+ "assumptions": [
+  "Quadratischer Grundriss 13 x 13 m, Hauptgeschoss und Obergeschoss à 4,2 m.",
+  "Vier dorische Portiken (je 4 Säulen), Kuppel mit Kupferpatina über flachem Walmdach."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "OG",
+   "elevation": 4.2
+  },
+  {
+   "name": "Dach",
+   "elevation": 8.4
+  }
+ ],
+ "storey_height": 4.2,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Villa",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    13.0,
+    13.0
+   ],
+   "base_z": 0.3,
+   "storeys": 2,
+   "storey_height": 4.2,
+   "wall_thickness": 0.55,
+   "facade": "plaster_white",
+   "roof": {
+    "type": "hip",
+    "pitch_deg": 12,
+    "overhang": 0.5,
+    "material": "roof_tile_red"
+   },
+   "facade_detail": {
+    "plinth": {
+     "height": 0.8,
+     "material": "stone_ashlar_light"
+    }
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 5.7,
+   "width": 1.6,
+   "height": 3.0,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "frame": "paint_white",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   },
+   "top": "segment_arch"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 1,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 5.7,
+   "width": 1.6,
+   "height": 3.0,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "frame": "paint_white",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   },
+   "top": "segment_arch"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 1,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 5.7,
+   "width": 1.6,
+   "height": 3.0,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "frame": "paint_white",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   },
+   "top": "segment_arch"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 1,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 5.7,
+   "width": 1.6,
+   "height": 3.0,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "frame": "paint_white",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   },
+   "top": "segment_arch"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.2,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "casement"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 1.72,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 1,
+   "offset": 10.18,
+   "width": 1.1,
+   "height": 2.4,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "casement",
+   "surround": {
+    "material": "stone_ashlar_light",
+    "width": 0.16,
+    "depth": 0.05,
+    "lintel": "pediment"
+   }
+  }
+ ],
+ "components": [
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "S",
+   "u": 6.5,
+   "width": 7.4,
+   "depth": 2.6,
+   "z": 0.0,
+   "thickness": 0.3,
+   "material": "stone_marble_white",
+   "railing": "none"
+  },
+  {
+   "type": "column",
+   "volume": "A",
+   "side": "S",
+   "u": 6.5,
+   "count": 4,
+   "spacing": 2.0,
+   "distance": 1.9,
+   "radius": 0.3,
+   "z0": 0.3,
+   "z1": 8.3,
+   "order": "doric",
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "entablature",
+   "volume": "A",
+   "side": "S",
+   "u": 6.5,
+   "span": 6.8,
+   "z": 8.3,
+   "height": 0.9,
+   "distance": 1.9,
+   "beam_depth": 1.0,
+   "triglyphs": true,
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "N",
+   "u": 6.5,
+   "width": 7.4,
+   "depth": 2.6,
+   "z": 0.0,
+   "thickness": 0.3,
+   "material": "stone_marble_white",
+   "railing": "none"
+  },
+  {
+   "type": "column",
+   "volume": "A",
+   "side": "N",
+   "u": 6.5,
+   "count": 4,
+   "spacing": 2.0,
+   "distance": 1.9,
+   "radius": 0.3,
+   "z0": 0.3,
+   "z1": 8.3,
+   "order": "doric",
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "entablature",
+   "volume": "A",
+   "side": "N",
+   "u": 6.5,
+   "span": 6.8,
+   "z": 8.3,
+   "height": 0.9,
+   "distance": 1.9,
+   "beam_depth": 1.0,
+   "triglyphs": true,
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "E",
+   "u": 6.5,
+   "width": 7.4,
+   "depth": 2.6,
+   "z": 0.0,
+   "thickness": 0.3,
+   "material": "stone_marble_white",
+   "railing": "none"
+  },
+  {
+   "type": "column",
+   "volume": "A",
+   "side": "E",
+   "u": 6.5,
+   "count": 4,
+   "spacing": 2.0,
+   "distance": 1.9,
+   "radius": 0.3,
+   "z0": 0.3,
+   "z1": 8.3,
+   "order": "doric",
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "entablature",
+   "volume": "A",
+   "side": "E",
+   "u": 6.5,
+   "span": 6.8,
+   "z": 8.3,
+   "height": 0.9,
+   "distance": 1.9,
+   "beam_depth": 1.0,
+   "triglyphs": true,
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "W",
+   "u": 6.5,
+   "width": 7.4,
+   "depth": 2.6,
+   "z": 0.0,
+   "thickness": 0.3,
+   "material": "stone_marble_white",
+   "railing": "none"
+  },
+  {
+   "type": "column",
+   "volume": "A",
+   "side": "W",
+   "u": 6.5,
+   "count": 4,
+   "spacing": 2.0,
+   "distance": 1.9,
+   "radius": 0.3,
+   "z0": 0.3,
+   "z1": 8.3,
+   "order": "doric",
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "entablature",
+   "volume": "A",
+   "side": "W",
+   "u": 6.5,
+   "span": 6.8,
+   "z": 8.3,
+   "height": 0.9,
+   "distance": 1.9,
+   "beam_depth": 1.0,
+   "triglyphs": true,
+   "material": "stone_marble_white"
+  },
+  {
+   "type": "tower",
+   "volume": "A",
+   "x": 6.5,
+   "y": 6.5,
+   "radius": 3.3,
+   "z0": 7.2,
+   "z1": 9.8,
+   "sides": 24,
+   "roof": "dome",
+   "roof_height": 3.2,
+   "roof_overhang": 0.2,
+   "material": "plaster_white",
+   "roof_material": "roof_copper_patina",
+   "band": true,
+   "band_material": "stone_ashlar_light",
+   "finial": true
+  },
+  {
+   "type": "cornice",
+   "volume": "A",
+   "side": "all",
+   "z": 8.9,
+   "height": 0.4,
+   "projection": 0.4,
+   "profile": "stepped",
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "all",
+   "material": "copper"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     6.5,
+     -2.6
+    ],
+    [
+     6.5,
+     -12.0
+    ]
+   ],
+   "width": 3.0,
+   "material": "paving_granite"
+  }
+ ],
+ "site": {},
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     32.5,
+     -19.5,
+     1.65
+    ],
+    "target": [
+     6.5,
+     6.5,
+     5.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -19.5,
+     -19.5,
+     1.65
+    ],
+    "target": [
+     6.5,
+     6.5,
+     5.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     6.5,
+     -27.3,
+     1.65
+    ],
+    "target": [
+     6.5,
+     6.5,
+     5.0
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     35.1,
+     -22.1,
+     10
+    ],
+    "target": [
+     6.5,
+     6.5,
+     5.0
+    ],
+    "lens_mm": 28
+   }
+  ]
+ }
+}

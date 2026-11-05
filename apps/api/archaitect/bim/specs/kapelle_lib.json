@@ -1,0 +1,383 @@
+{
+ "spec_version": 1,
+ "name": "Kapelle mit Glockenturm",
+ "description": "Kleine Sandstein-Kapelle mit Spitzbogenfenstern, Strebepfeilern, Glockenturm und Schieferdach",
+ "building_type": "kapelle",
+ "assumptions": [
+  "Kirchenschiff 7 x 12 m mit 6,4 m Wandhöhe und vorgesetztem Turm 3,5 x 3,4 m angenommen.",
+  "Spitzbogenfenster, Sandsteinfassade, Schieferdach 42 Grad (Turm 62 Grad)."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "Dach",
+   "elevation": 6.4
+  }
+ ],
+ "storey_height": 6.4,
+ "slab_thickness": 0.25,
+ "defaults": {
+  "wall_thickness": 0.36,
+  "parapet_height": 0.1,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_white",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Kirchenschiff",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    7.0,
+    12.0
+   ],
+   "base_z": 0.3,
+   "storeys": 1,
+   "storey_height": 6.4,
+   "wall_thickness": 0.6,
+   "facade": "stone_sandstone_yellow",
+   "roof": {
+    "type": "gable",
+    "ridge": "y",
+    "pitch_deg": 42,
+    "overhang": 0.4,
+    "material": "roof_slate"
+   }
+  },
+  {
+   "id": "B",
+   "name": "Glockenturm",
+   "origin": [
+    1.75,
+    -3.4
+   ],
+   "size": [
+    3.5,
+    3.4
+   ],
+   "base_z": 0.3,
+   "storeys": 3,
+   "storey_height": 3.4,
+   "wall_thickness": 0.6,
+   "facade": "stone_sandstone_yellow",
+   "roof": {
+    "type": "hip",
+    "pitch_deg": 62,
+    "overhang": 0.3,
+    "material": "roof_slate"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 0,
+   "offset": 0.95,
+   "width": 1.6,
+   "height": 3.2,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "double",
+   "top": "pointed_arch",
+   "arch_rise": 0.7,
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 1,
+   "offset": 1.15,
+   "width": 1.2,
+   "height": 1.5,
+   "sill": 0.6,
+   "kind": "window",
+   "window_type": "oculus"
+  },
+  {
+   "volume": "B",
+   "side": "S",
+   "storey": 2,
+   "offset": 1.05,
+   "width": 1.4,
+   "height": 2.0,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "fixed",
+   "top": "pointed_arch",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "E",
+   "storey": 2,
+   "offset": 1.0,
+   "width": 1.4,
+   "height": 2.0,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "fixed",
+   "top": "pointed_arch",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "B",
+   "side": "W",
+   "storey": 2,
+   "offset": 1.0,
+   "width": 1.4,
+   "height": 2.0,
+   "sill": 0.5,
+   "kind": "window",
+   "window_type": "fixed",
+   "top": "pointed_arch",
+   "frame": "timber_brown_dark"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 2.17,
+   "width": 1.1,
+   "height": 3.6,
+   "sill": 1.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "pointed_arch",
+   "arch_rise": 0.55,
+   "frame": "steel_black"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 5.45,
+   "width": 1.1,
+   "height": 3.6,
+   "sill": 1.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "pointed_arch",
+   "arch_rise": 0.55,
+   "frame": "steel_black"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 8.72,
+   "width": 1.1,
+   "height": 3.6,
+   "sill": 1.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "pointed_arch",
+   "arch_rise": 0.55,
+   "frame": "steel_black"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 2.17,
+   "width": 1.1,
+   "height": 3.6,
+   "sill": 1.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "pointed_arch",
+   "arch_rise": 0.55,
+   "frame": "steel_black"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 5.45,
+   "width": 1.1,
+   "height": 3.6,
+   "sill": 1.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "pointed_arch",
+   "arch_rise": 0.55,
+   "frame": "steel_black"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 8.72,
+   "width": 1.1,
+   "height": 3.6,
+   "sill": 1.4,
+   "kind": "window",
+   "window_type": "casement",
+   "top": "pointed_arch",
+   "arch_rise": 0.55,
+   "frame": "steel_black"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 2.75,
+   "width": 1.5,
+   "height": 3.2,
+   "sill": 1.6,
+   "kind": "window",
+   "window_type": "fixed",
+   "top": "round_arch"
+  }
+ ],
+ "components": [
+  {
+   "type": "steps",
+   "volume": "B",
+   "side": "S",
+   "u": 1.75,
+   "width": 2.4,
+   "count": 3,
+   "rise": 0.1,
+   "tread": 0.35,
+   "material": "stone_granite_grey"
+  },
+  {
+   "type": "buttress",
+   "volume": "A",
+   "side": "E",
+   "count": 3,
+   "pitch": 3.4,
+   "width": 0.7,
+   "projection": 0.7,
+   "z0": 0.0,
+   "height": 5.2,
+   "material": "stone_sandstone_yellow"
+  },
+  {
+   "type": "buttress",
+   "volume": "A",
+   "side": "W",
+   "count": 3,
+   "pitch": 3.4,
+   "width": 0.7,
+   "projection": 0.7,
+   "z0": 0.0,
+   "height": 5.2,
+   "material": "stone_sandstone_yellow"
+  },
+  {
+   "type": "cornice",
+   "volume": "B",
+   "side": "all",
+   "z": 6.3,
+   "height": 0.3,
+   "projection": 0.2,
+   "profile": "simple",
+   "material": "stone_ashlar_light"
+  },
+  {
+   "type": "lamp",
+   "volume": "B",
+   "side": "S",
+   "u": 0.35,
+   "z": 2.6,
+   "size": 0.3,
+   "material": "cast_iron_black"
+  },
+  {
+   "type": "gutter",
+   "volume": "A",
+   "side": "all",
+   "material": "copper_patina"
+  },
+  {
+   "type": "path",
+   "points": [
+    [
+     3.5,
+     -3.4
+    ],
+    [
+     3.5,
+     -10.0
+    ]
+   ],
+   "width": 2.0,
+   "material": "paving_granite"
+  }
+ ],
+ "site": {},
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     27.5,
+     -21,
+     1.65
+    ],
+    "target": [
+     3.5,
+     3,
+     4.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -20.5,
+     -21,
+     1.65
+    ],
+    "target": [
+     3.5,
+     3,
+     4.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     3.5,
+     -28.2,
+     1.65
+    ],
+    "target": [
+     3.5,
+     3,
+     4.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     29.9,
+     -23.4,
+     9
+    ],
+    "target": [
+     3.5,
+     3,
+     4.5
+    ],
+    "lens_mm": 28
+   }
+  ]
+ }
+}

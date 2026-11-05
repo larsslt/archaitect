@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.esdi-humboldt.eu/hale/gpkg https://www.gdi-inspireumsetzer.de/ows/services/org.11.b749c494-5ea4-4edb-9551-3f34fe245119_wfs?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B+version%3D3.2&amp;TYPENAME=ft1:Planung&amp;NAMESPACES=xmlns(ft1,http%3A%2F%2Fwww.esdi-humboldt.eu%2Fhale%2Fgpkg)" xmlns:wfs="http://www.opengis.net/wfs/2.0" timeStamp="2026-11-02T20:47:53Z" xmlns:ft1="http://www.esdi-humboldt.eu/hale/gpkg" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" numberMatched="unknown" numberReturned="0">
+  <!--NOTE: numberReturned attribute should be 'unknown' as well, but this would not validate against the current version of the WFS 2.0 schema (change upcoming). See change request (CR 144): https://portal.opengeospatial.org/files?artifact_id=43925.-->
+  <wfs:member>
+    <ft1:Planung gml:id="PLANUNG_214">
+      <ft1:LOKAL_ID>WH100-030_1</ft1:LOKAL_ID>
+      <ft1:TYP>Bebauungsplan</ft1:TYP>
+      <ft1:ART>Bebauungsplan</ft1:ART>
+      <ft1:NAME>Sample Plan - 1.+2. Änderung</ft1:NAME>
+      <ft1:NAME_A></ft1:NAME_A>
+      <ft1:PLAN_GES>https://filetransfer.hochtaunuskreis.de/public/folder/R-ommHQcPU6qaQHx2PP7MQ/PDFserver/MST/Sample_Plan_1._und_2._aenderung.pdf</ft1:PLAN_GES>
+      <ft1:PLANZEICHN></ft1:PLANZEICHN>
+      <ft1:PLANTEXT></ft1:PLANTEXT>
+      <ft1:BEGRUEND></ft1:BEGRUEND>
+      <ft1:NEBENBEST></ft1:NEBENBEST>
+      <ft1:ZUS_ERKL></ft1:ZUS_ERKL>
+      <ft1:RECHTSKR>2003-04-07</ft1:RECHTSKR>
+      <ft1:AUFSTELLB>2002-12-13</ft1:AUFSTELLB>
+      <ft1:OFFENLEGZ>07.02.2003 - 10.03.2003</ft1:OFFENLEGZ>
+      <ft1:SATZBESCHL>2003-04-04</ft1:SATZBESCHL>
+      <ft1:HINTERGR>Liegenschaftskarte</ft1:HINTERGR>
+      <ft1:AGS>06434012</ft1:AGS>
+      <ft1:LAND>Hessen</ft1:LAND>
+      <ft1:REGBEZ>Darmstadt</ft1:REGBEZ>
+      <ft1:KREIS>Hochtaunuskreis</ft1:KREIS>
+      <ft1:GEMEINDE>Musterstadt</ft1:GEMEINDE>
+      <ft1:GEMARKUNG>Musterstadt</ft1:GEMARKUNG>
+      <ft1:AKT_DATENB>2026-09-28</ft1:AKT_DATENB>
+      <ft1:AKT_DATENS>2016-11-14</ft1:AKT_DATENS>
+      <ft1:geometry>
+        <!--Inlined geometry 'GEOMETRY_20d7f845-6988-4d6a-b638-e3f4b14f6df3'-->
+        <gml:MultiSurface gml:id="GEOMETRY_20d7f845-6988-4d6a-b638-e3f4b14f6df3" srsName="urn:ogc:def:crs:EPSG::4326">
+          <gml:surfaceMember>
+            <gml:Polygon gml:id="GEOMETRY_93412bca-e794-499b-bf39-c74546113fc9" srsName="urn:ogc:def:crs:EPSG::4326">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>50.288220 8.580634 50.288368 8.580458 50.288734 8.580130 50.290377 8.578651 50.290864 8.578214 50.291175 8.577934 50.291423 8.577733 50.291671 8.577571 50.291939 8.577427 50.292182 8.577319 50.292280 8.578089 50.292337 8.578592 50.292612 8.579394 50.293419 8.579191 50.293948 8.580516 50.293943 8.580625 50.291061 8.583875 50.290103 8.584952 50.289193 8.582996 50.288691 8.581916 50.288190 8.580841 50.288220 8.580634</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </ft1:geometry>
+    </ft1:Planung>
+  </wfs:member>
+  <wfs:member>
+    <ft1:Planung gml:id="PLANUNG_215">
+      <ft1:LOKAL_ID>WH100-030</ft1:LOKAL_ID>
+      <ft1:TYP>Bebauungsplan</ft1:TYP>
+      <ft1:ART>Bebauungsplan</ft1:ART>
+      <ft1:NAME>Sample Plan</ft1:NAME>
+      <ft1:NAME_A></ft1:NAME_A>
+      <ft1:PLAN_GES>https://filetransfer.hochtaunuskreis.de/public/folder/R-ommHQcPU6qaQHx2PP7MQ/PDFserver/MST/Sample_Plan.pdf</ft1:PLAN_GES>
+      <ft1:PLANZEICHN></ft1:PLANZEICHN>
+      <ft1:PLANTEXT></ft1:PLANTEXT>
+      <ft1:BEGRUEND>https://filetransfer.hochtaunuskreis.de/public/folder/R-ommHQcPU6qaQHx2PP7MQ/PDFserver/MST/Sample_Plan_Begruendung.pdf</ft1:BEGRUEND>
+      <ft1:NEBENBEST></ft1:NEBENBEST>
+      <ft1:ZUS_ERKL></ft1:ZUS_ERKL>
+      <ft1:RECHTSKR>2002-03-23</ft1:RECHTSKR>
+      <ft1:AUFSTELLB>1987-01-30</ft1:AUFSTELLB>
+      <ft1:OFFENLEGZ>24.09.2001 - 26.10.2001</ft1:OFFENLEGZ>
+      <ft1:SATZBESCHL>2002-01-11</ft1:SATZBESCHL>
+      <ft1:HINTERGR>Liegenschaftskarte</ft1:HINTERGR>
+      <ft1:AGS>06434012</ft1:AGS>
+      <ft1:LAND>Hessen</ft1:LAND>
+      <ft1:REGBEZ>Darmstadt</ft1:REGBEZ>
+      <ft1:KREIS>Hochtaunuskreis</ft1:KREIS>
+      <ft1:GEMEINDE>Musterstadt</ft1:GEMEINDE>
+      <ft1:GEMARKUNG>Musterstadt</ft1:GEMARKUNG>
+      <ft1:AKT_DATENB>2026-09-28</ft1:AKT_DATENB>
+      <ft1:AKT_DATENS>2016-11-14</ft1:AKT_DATENS>
+      <ft1:geometry>
+        <!--Inlined geometry 'GEOMETRY_b3508803-35be-4d76-879b-9b6f411b5edd'-->
+        <gml:MultiSurface gml:id="GEOMETRY_b3508803-35be-4d76-879b-9b6f411b5edd" srsName="urn:ogc:def:crs:EPSG::4326">
+          <gml:surfaceMember>
+            <gml:Polygon gml:id="GEOMETRY_96d0cf78-2c09-44f7-9dee-559c6f2b97ae" srsName="urn:ogc:def:crs:EPSG::4326">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>50.288190 8.580841 50.288220 8.580633 50.288368 8.580457 50.288553 8.580292 50.289120 8.579783 50.289688 8.579272 50.290441 8.578595 50.290795 8.578276 50.291175 8.577933 50.291423 8.577733 50.291671 8.577571 50.291939 8.577428 50.292182 8.577319 50.292279 8.578089 50.292337 8.578592 50.292612 8.579394 50.293419 8.579191 50.293948 8.580516 50.293943 8.580625 50.293247 8.581409 50.291950 8.582872 50.290685 8.584297 50.290103 8.584952 50.289578 8.583824 50.289093 8.582780 50.288190 8.580841</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </ft1:geometry>
+    </ft1:Planung>
+  </wfs:member>
+  <wfs:member>
+    <ft1:Planung gml:id="PLANUNG_260">
+      <ft1:LOKAL_ID>WH100-030_2</ft1:LOKAL_ID>
+      <ft1:TYP>Bebauungsplan</ft1:TYP>
+      <ft1:ART>Bebauungsplan</ft1:ART>
+      <ft1:NAME>Sample Plan - 3. Änderung</ft1:NAME>
+      <ft1:NAME_A></ft1:NAME_A>
+      <ft1:PLAN_GES>https://filetransfer.hochtaunuskreis.de/public/folder/R-ommHQcPU6qaQHx2PP7MQ/PDFserver/MST/Sample_Plan_3._aenderung.pdf</ft1:PLAN_GES>
+      <ft1:PLANZEICHN></ft1:PLANZEICHN>
+      <ft1:PLANTEXT></ft1:PLANTEXT>
+      <ft1:BEGRUEND>https://filetransfer.hochtaunuskreis.de/public/folder/R-ommHQcPU6qaQHx2PP7MQ/PDFserver/MST/Sample_Plan_3._aenderung_Begruendung.pdf</ft1:BEGRUEND>
+      <ft1:NEBENBEST></ft1:NEBENBEST>
+      <ft1:ZUS_ERKL></ft1:ZUS_ERKL>
+      <ft1:RECHTSKR>2004-06-25</ft1:RECHTSKR>
+      <ft1:OFFENLEGZ></ft1:OFFENLEGZ>
+      <ft1:SATZBESCHL>2004-06-18</ft1:SATZBESCHL>
+      <ft1:HINTERGR>Liegenschaftskarte</ft1:HINTERGR>
+      <ft1:AGS>06434012</ft1:AGS>
+      <ft1:LAND>Hessen</ft1:LAND>
+      <ft1:REGBEZ>Darmstadt</ft1:REGBEZ>
+      <ft1:KREIS>Hochtaunuskreis</ft1:KREIS>
+      <ft1:GEMEINDE>Musterstadt</ft1:GEMEINDE>
+      <ft1:GEMARKUNG>Musterstadt</ft1:GEMARKUNG>
+      <ft1:AKT_DATENB>2026-09-28</ft1:AKT_DATENB>
+      <ft1:AKT_DATENS>2016-11-14</ft1:AKT_DATENS>
+      <ft1:geometry>
+        <!--Inlined geometry 'GEOMETRY_1f332de9-f328-4ae4-b8a9-78d2c99625e5'-->
+        <gml:MultiSurface gml:id="GEOMETRY_1f332de9-f328-4ae4-b8a9-78d2c99625e5" srsName="urn:ogc:def:crs:EPSG::4326">
+          <gml:surfaceMember>
+            <gml:Polygon gml:id="GEOMETRY_8c4e8bb9-ec54-487b-ae50-896c7c273db8" srsName="urn:ogc:def:crs:EPSG::4326">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>50.289185 8.581561 50.289090 8.580947 50.289501 8.580793 50.289737 8.580704 50.289859 8.580658 50.289914 8.580691 50.290054 8.581020 50.289532 8.581430 50.289500 8.581443 50.289185 8.581561</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+          <gml:surfaceMember>
+            <gml:Polygon gml:id="GEOMETRY_e545bbc1-a037-410b-a118-23187c95613b" srsName="urn:ogc:def:crs:EPSG::4326">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>50.288473 8.580648 50.288275 8.580783 50.288453 8.581168 50.288402 8.581202 50.288348 8.581179 50.288190 8.580841 50.288220 8.580633 50.288368 8.580456 50.288553 8.580292 50.288576 8.580347 50.289003 8.580098 50.289067 8.580379 50.288630 8.580544 50.288473 8.580648</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </ft1:geometry>
+    </ft1:Planung>
+  </wfs:member>
+</wfs:FeatureCollection>

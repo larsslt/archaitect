@@ -1,0 +1,375 @@
+{
+ "spec_version": 1,
+ "name": "Café",
+ "description": "Kleines Café mit Glasfassade zur Straße, Markise, Außenterrasse mit Tischen",
+ "assumptions": [
+  "Grundflaeche 10.0 x 7.0 m und Geschosshoehe 3.4 m als plausible Annahme fuer ein kleines Cafe.",
+  "Flachdach mit Bitumenbahn und Putzfassade cremeweiss angenommen.",
+  "Strassenseite als Suedseite (y=0) angenommen, Terrasse 8.0 x 3.5 m suedlich davor.",
+  "Glasfassade als Festverglasung mit mittiger vollverglaster Eingangstuer angenommen.",
+  "Markise rot-weiss gestreift 8.5 m breit ueber der Glasfassade angenommen.",
+  "Drei Gartenmoebel-Sets auf der Terrasse als Annahme fuer Aussenterrasse mit Tischen."
+ ],
+ "levels": [
+  {
+   "name": "EG",
+   "elevation": 0.0
+  },
+  {
+   "name": "Dach",
+   "elevation": 3.4
+  }
+ ],
+ "storey_height": 3.4,
+ "slab_thickness": 0.3,
+ "defaults": {
+  "wall_thickness": 0.3,
+  "parapet_height": 0.3,
+  "window": {
+   "frame_width": 0.06,
+   "frame_depth": 0.08,
+   "reveal_depth": 0.12,
+   "glass": "glass_clear",
+   "frame": "paint_anthracite",
+   "sill_board": true
+  }
+ },
+ "volumes": [
+  {
+   "id": "A",
+   "name": "Cafe",
+   "origin": [
+    0.0,
+    0.0
+   ],
+   "size": [
+    10.0,
+    7.0
+   ],
+   "base_z": 0.0,
+   "storeys": 1,
+   "storey_height": 3.4,
+   "wall_thickness": 0.3,
+   "facade": "plaster_cream",
+   "roof": {
+    "type": "flat",
+    "material": "roof_bitumen"
+   }
+  }
+ ],
+ "openings": [
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 0.5,
+   "width": 1.8,
+   "height": 2.6,
+   "sill": 0.2,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "paint_anthracite",
+   "note": "Schaufenster links"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 2.6,
+   "width": 1.5,
+   "height": 2.6,
+   "sill": 0.2,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "paint_anthracite",
+   "note": "Schaufenster links neben Tuer"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 4.4,
+   "width": 1.2,
+   "height": 2.5,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "full_glass",
+   "frame": "paint_anthracite",
+   "note": "Haupteingang Glas"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 5.9,
+   "width": 1.5,
+   "height": 2.6,
+   "sill": 0.2,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "paint_anthracite",
+   "note": "Schaufenster rechts neben Tuer"
+  },
+  {
+   "volume": "A",
+   "side": "S",
+   "storey": 0,
+   "offset": 7.7,
+   "width": 1.8,
+   "height": 2.6,
+   "sill": 0.2,
+   "kind": "window",
+   "window_type": "fixed",
+   "frame": "paint_anthracite",
+   "note": "Schaufenster rechts"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "paint_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "E",
+   "storey": 0,
+   "offset": 4.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "paint_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 1.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "paint_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "W",
+   "storey": 0,
+   "offset": 4.0,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "paint_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 0.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "paint_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 2.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "paint_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 4.5,
+   "width": 1.5,
+   "height": 1.4,
+   "sill": 0.9,
+   "kind": "window",
+   "window_type": "casement",
+   "frame": "paint_anthracite"
+  },
+  {
+   "volume": "A",
+   "side": "N",
+   "storey": 0,
+   "offset": 7.0,
+   "width": 1.0,
+   "height": 2.1,
+   "sill": 0.0,
+   "kind": "door",
+   "door_type": "panel",
+   "panel": "paint_anthracite",
+   "note": "Hintertuer"
+  }
+ ],
+ "components": [
+  {
+   "type": "awning",
+   "volume": "A",
+   "side": "S",
+   "u": 5.0,
+   "width": 1.6,
+   "projection": 1.4,
+   "z": 2.8,
+   "drop": 0.5,
+   "stripe": 0.3,
+   "material": "paint_red_bright",
+   "material2": "paint_white",
+   "note": "Markise ueber Glasfassade"
+  },
+  {
+   "type": "terrace",
+   "volume": "A",
+   "side": "S",
+   "u": 5.0,
+   "width": 8.0,
+   "depth": 3.5,
+   "z": 0.0,
+   "thickness": 0.15,
+   "material": "paving_flagstone",
+   "railing": "none",
+   "note": "Aussenterrasse"
+  },
+  {
+   "type": "garden_set",
+   "x": 2.5,
+   "y": -1.8,
+   "parasol": false,
+   "material": "wood_oak",
+   "frame_material": "steel_black",
+   "note": "Tisch 1"
+  },
+  {
+   "type": "garden_set",
+   "x": 5.0,
+   "y": -2.0,
+   "parasol": true,
+   "parasol_material": "plaster_cream",
+   "material": "wood_oak",
+   "frame_material": "steel_black",
+   "note": "Tisch 2 mit Schirm"
+  },
+  {
+   "type": "garden_set",
+   "x": 7.5,
+   "y": -1.8,
+   "parasol": false,
+   "material": "wood_oak",
+   "frame_material": "steel_black",
+   "note": "Tisch 3"
+  },
+  {
+   "type": "canopy",
+   "volume": "A",
+   "side": "N",
+   "u": 7.5,
+   "width": 1.9,
+   "projection": 1.1,
+   "z": 2.3,
+   "kind": "shed",
+   "support": "brackets",
+   "thickness": 0.08,
+   "material": "steel_black",
+   "roof_material": null
+  }
+ ],
+ "building_type": "supermarkt_handel",
+ "limitations": [
+  "Schriftzug und Menuekarte des Cafes nur als neutrales Aushaengeschild angedeutet.",
+  "Theke, Kuchenvitrine und weitere Inneneinrichtung nicht abgebildet."
+ ],
+ "render": {
+  "cameras": [
+   {
+    "name": "hero_se",
+    "position": [
+     14.4,
+     -8.53,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.5,
+     1.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "hero_sw",
+    "position": [
+     -4.4,
+     -8.53,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.5,
+     1.5
+    ],
+    "lens_mm": 28
+   },
+   {
+    "name": "street_s",
+    "position": [
+     5.0,
+     -10.33,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.5,
+     1.5
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "street_n",
+    "position": [
+     5.0,
+     17.33,
+     1.65
+    ],
+    "target": [
+     5.0,
+     3.5,
+     1.5
+    ],
+    "lens_mm": 30
+   },
+   {
+    "name": "drone_se",
+    "position": [
+     15.44,
+     -9.86,
+     5.65
+    ],
+    "target": [
+     5.0,
+     3.5,
+     2.7
+    ],
+    "lens_mm": 32
+   }
+  ]
+ },
+ "site": {}
+}
